@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_1848385_greeno_0_greenops_asset</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 07:29:24</sys_created_on>
+        <sys_id>f1c7fa5c47dc8f10ad9997bf016d43d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1848385_greeno_0_greenops_asset</sys_name>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name>sys_security_acl_f1c7fa5c47dc8f10ad9997bf016d43d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 07:29:24</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a97b36544710cf10ad9997bf016d4306" label="Carbon Waste Alert" max_length="40" name="x_1848385_greeno_0_carbon_waste_alert" type="collection">
+        <element label="CO2 Waste (kg)" max_length="38" name="co2_waste_kg" type="decimal"/>
+        <element default="10" label="CPU Utilization" max_length="38" name="cpu_utilization" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Potential Savings" max_length="40" name="potential_savings" type="currency"/>
+        <element label="Asset" max_length="32" name="asset" reference="x_1848385_greeno_0_greenops_asset" type="reference"/>
+        <index name="index">
+            <element name="asset"/>
+        </index>
+    </element>
+</database>

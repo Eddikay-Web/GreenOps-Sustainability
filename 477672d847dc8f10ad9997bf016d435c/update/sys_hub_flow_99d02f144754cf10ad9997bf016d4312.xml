@@ -1,0 +1,1659 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=195205000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automatically hibernates all Development servers at 6:00 PM daily to save CO2.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>greenops_nightly_shutdown</internal_name>
+        <label_cache>[{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.first_name","label":"2 - For Each➛GreenOps Asset Record➛Assiged to➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{"e9201096-a4d9-49dd-b97a-d120a8cd4f58":[null]}},{"name":"e5eac8d1-16e7-40a9-992b-787937775dbe.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"06f12128-8a99-4e04-bbb7-0000a002eb64":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"116920a6-b93b-46de-bc91-210da4c975f0.Record.co2_waste_kg","label":"6➛Carbon Waste Alert Record➛CO2 Waste (kg)","reference":"","reference_display":"CO2 Waste (kg)","type":"decimal","base_type":"decimal","usedInstances":{},"attributes":{"":""}},{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item.asset_name","label":"2 - For Each➛GreenOps Asset Record➛Asset Name","reference":"","reference_display":"Asset Name","type":"string","base_type":"string","parent_table_name":"x_1848385_greeno_0_greenops_asset","column_name":"asset_name","usedInstances":{"91d54fd7-e3be-44d4-a339-154c78ba847c":["cpu_utilization"],"e9201096-a4d9-49dd-b97a-d120a8cd4f58":[null]}},{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to","label":"2 - For Each➛GreenOps Asset Record➛Assiged to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1848385_greeno_0_greenops_asset","column_name":"assiged_to","usedInstances":{}},{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item","label":"2 - For Each➛GreenOps Asset Record","reference":"x_1848385_greeno_0_greenops_asset","reference_display":"GreenOps Asset","type":"reference","base_type":"reference","usedInstances":{"116920a6-b93b-46de-bc91-210da4c975f0":["conditions"],"91d54fd7-e3be-44d4-a339-154c78ba847c":["asset"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.email","label":"2 - For Each➛GreenOps Asset Record➛Assiged to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{}},{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item.cpu_utilization","label":"2 - For Each➛GreenOps Asset Record➛CPU Utilization","reference":"","reference_display":"CPU Utilization","type":"decimal","base_type":"decimal","parent_table_name":"x_1848385_greeno_0_greenops_asset","column_name":"cpu_utilization","choices":[{"order":0.0}],"usedInstances":{"91d54fd7-e3be-44d4-a339-154c78ba847c":["cpu_utilization"]}},{"name":"4f3f480b-4d04-4317-b5a4-483aaac8e3a7.record","label":"5 - Update Record➛GreenOps Asset Record","reference":"x_1848385_greeno_0_greenops_asset","reference_display":"GreenOps Asset","type":"reference","base_type":"reference","usedInstances":{"e5eac8d1-16e7-40a9-992b-787937775dbe":["record"],"91d54fd7-e3be-44d4-a339-154c78ba847c":["asset"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"116920a6-b93b-46de-bc91-210da4c975f0.Record.potential_savings","label":"6➛Carbon Waste Alert Record➛Potential Savings","reference":"","reference_display":"Potential Savings","type":"currency","base_type":"currency","usedInstances":{},"attributes":{"":""}},{"name":"84cbe889-5c5f-4bc7-97ed-bd4ece1eba5a.Records","label":"1 - Look Up Records➛GreenOps Asset Records","reference":"x_1848385_greeno_0_greenops_asset","reference_display":"GreenOps Asset","type":"records","base_type":"records","usedInstances":{"e3b42b11-aa68-4511-a766-f9a067ed798b":["items"],"e9201096-a4d9-49dd-b97a-d120a8cd4f58":[null]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>98356f5c4754cf10ad9997bf016d43ea</master_snapshot>
+        <master_snapshot_digest/>
+        <name>GreenOps Nightly Shutdown</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>0f250f4d47d40310ad9997bf016d4307</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:28:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>99d02f144754cf10ad9997bf016d4312</sys_id>
+        <sys_mod_count>124</sys_mod_count>
+        <sys_name>GreenOps Nightly Shutdown</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name>sys_hub_flow_99d02f144754cf10ad9997bf016d4312</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>ff7907c547180310ad9997bf016d4399</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=99d02f144754cf10ad9997bf016d4312"/>
+    <sys_variable_value action="delete_multiple" query="document_key=99d02f144754cf10ad9997bf016d4312"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <published_version/>
+        <run_flow_in/>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:23:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0f250f4d47d40310ad9997bf016d4307</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <trigger_definition/>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=99d02f144754cf10ad9997bf016d4312"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=99d02f144754cf10ad9997bf016d4312"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=99d02f144754cf10ad9997bf016d4312^sys_idNOT IN5dd02f144754cf10ad9997bf016d4313"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>99d02f144754cf10ad9997bf016d4312</id>
+        <name>GreenOps Nightly Shutdown</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:28:46</sys_created_on>
+        <sys_id>5dd02f144754cf10ad9997bf016d4313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 10:28:46</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5dd02f144754cf10ad9997bf016d4313"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=99d02f144754cf10ad9997bf016d4312^sys_idNOT INec250b4d47d40310ad9997bf016d4352,ec250b4d47d40310ad9997bf016d438c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</model>
+        <model_id>99d02f144754cf10ad9997bf016d4312</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_99d02f144754cf10ad9997bf016d4312</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:23:12</sys_created_on>
+        <sys_id>ec250b4d47d40310ad9997bf016d4352</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:23:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ec250b4d47d40310ad9997bf016d4352"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</model>
+        <model_id>99d02f144754cf10ad9997bf016d4312</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_99d02f144754cf10ad9997bf016d4312</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:23:12</sys_created_on>
+        <sys_id>ec250b4d47d40310ad9997bf016d438c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ec250b4d47d40310ad9997bf016d438c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=99d02f144754cf10ad9997bf016d4312"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=99d02f144754cf10ad9997bf016d4312"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=99d02f144754cf10ad9997bf016d4312^sys_idNOT IN4025874d47d40310ad9997bf016d43cd"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:23:10</sys_created_on>
+        <sys_id>4025874d47d40310ad9997bf016d43cd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:06</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TTW/bMAz9K4FOG5CDk6zNktswoECAbgWarpdiMGSJcoTJkifJbr2g/32kPxK3M4YB3U2iyMfHx6eHIzM8A8O27LaysyvjHmc7y+ZM2wjecnPXlICP4uC0AIx3h2sdIts+HJm656aihIyLH7l3lZWYpK5HmIowtZ2dM2bvJChemfiecncFzwmBznswICJItlXcBMDItzC+fdEhaJv3gef5iIByHv5O4GXGG9p+n7OCW8mj8805ybviDorS8AinoPMSPNsukmTOaiK6b8JOdl0tL6i/r2xKDFNNstf9NHiUOiBYc3+OiIM20oNF5ZFCyT0iRMI/vnrS1OIy2SRivdys18tktUoSdZEpoYRYf1wkl4uLDQJOr36SWHzlg/Fk8BTBypFgf6rjgcsba86BAxqsm6rgT0H/QvAPCeUpwDFEP/HpmvZqDEIQi9A60Py71eopr/aDJGSmKawXrqmnzDZIQb7ou33+/wQXbya4JIKddDdl1A7Nwla0Wp4ZqglN6BbuQWBJGr3OcyzEImeqwn6d8kXPfuTSKuC2oCRH0IqH77E/uMfbYZ1X2raU+kfjBDenG4/YOasi6XdkXNYcK8jR0WOP59YV6c+KKtp/MvRK24koIQivy/hJRF3D6dP+BvLQA67rBAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=99d02f144754cf10ad9997bf016d4312^sys_idNOT IN09b4af1c4754cf10ad9997bf016d4354,2d8e73d04758cf10ad9997bf016d4317,4bb608244798cf10ad9997bf016d4392,6d242fd84754cf10ad9997bf016d43e5,8fecf1f447188350ad9997bf016d430f,fb49fb184718cf10ad9997bf016d4343"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>06f12128-8a99-4e04-bbb7-0000a002eb64</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:45:41</sys_created_on>
+        <sys_id>09b4af1c4754cf10ad9997bf016d4354</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-16 10:26:50</sys_updated_on>
+        <ui_id>4f3f480b-4d04-4317-b5a4-483aaac8e3a7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5XPpUqaNqS9ISpWK7EgwYoLoGgST1pLjpO1HaBb9b/vOHHaClgWJC5oe8p82e+9zktuN0xwNmcT5EE4C+M8CqNoHATjZBJmcZSFYx4BYsiGTEGJ1KkxrzSn+AFk4xKbDUbZZJyF4RFAnBxNpu7pOI6PihkE8THy41mSjYTFcrulOS5MLWF948cpk6+E5BoVm9/eD1kNmm6yqNl886z0XqgSMpTUetVjfY7drmsX8ypvSlQ2FX3y3E8ufGXwfUEVGnJwwmDI8Mmi4khACpAGh6wExcFWes3mVjeU0Aj8Usn1rmMllO2IlvBkxG+6eRK4vgKJWe5F2IWpF6hLFwuwcE0n57bRO70qkaPpNOFYQCPt6WGua7israhUN2Ihk/10JZtSXXSKsN0BB/9HYwgE1o6nQ97RKq5X1eNVD/JMqFYST1FWOchdBNZqkTXWwdkwlNhqXEJdC7VMa109iHaYoJSjpaRgVMjqke40YqlGkDvcI1IVRmeUX7TpG9DCkfhBx9DwdsjM2pxKMGZPhTRMfzUOSUfMU0hbFVoJ0nYT3HCuRW1P6KoH9MC3Q2+GbPrWhuWz/UIdnLk3xFMaJpMkSqbpUiOqKg38Q21Sgov2pQm+ufplbQYnvv4xS7wDcG+Jn+0ivE7Au+JF7vxwdnDRFbwnpp/mieQrecLT+PKm+JcVgvGbL9uDTWq33xzYwFiwjblrgiDiK5GhVmCRv9z9v/Z9zAPvQNp74Eyg5OYV6L0BsCSAFtOOyjMT+OLgxhd3H4dPc0IYB+3vC/nhv/lG3P8Bsd/XSTIJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=09b4af1c4754cf10ad9997bf016d4354"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>06f12128-8a99-4e04-bbb7-0000a002eb64</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:38:30</sys_created_on>
+        <sys_id>2d8e73d04758cf10ad9997bf016d4317</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-16 10:26:50</sys_updated_on>
+        <ui_id>e9201096-a4d9-49dd-b97a-d120a8cd4f58</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2d8e73d04758cf10ad9997bf016d4317"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>06f12128-8a99-4e04-bbb7-0000a002eb64</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:14:23</sys_created_on>
+        <sys_id>4bb608244798cf10ad9997bf016d4392</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-16 10:26:50</sys_updated_on>
+        <ui_id>116920a6-b93b-46de-bc91-210da4c975f0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX227bOBD9FUHPtleKbEnOW5HAQIFuAzTZ7EO3ICiRSoilSZWkkjhG/r1DiZJdW/Vl4yyy2CdbwxHnzOXMjL4ufUb8c39CgmkxnU7SJAiiKAjiOMpxmGVRnGdBloX+wBd4TkFTS2WQWZQURA+YV52MUJ2DjDBdcry4dUfPnpEeBnl+zzhRVPjnX78N/BIruM5Q5Z8vN44OxcNxRjmoXoNx76YB1IOx/jkHG5Ll7fMn9+pFK5SKWCjRwKdPhgpCAUOBuaYDf44FwUaqRSdRFJMrwVeCeyYM3OZb5SfNnsFedGb1Cgpe5bQ56x6RC1EjLi6xwddGVbmplFNtwGqIx7JzE9tAPm8GHdcxd/CDl8FKvwt8X5LcC+ELxJvQAlfcXPwzm+GxNs+szcbBq9IwCVn3I5sXnPHWfcmrufjc5NLvEN5ug3Anlz/XXAe70hBsWtqE2gy5dBXX9/LxS5uNGRM1LnfIZY5594SNUSyrjI3L0i8IKhjlBDHBmbCWIG22fCinc7CA5rgsmbhDpZIPrL4VfJmP7jg8jAouH20s2J0Y4dx6PoLCwqMZyC9r8S1WzEbhd7gGXh5Yg/fwqrOHdK5YadAjI3fUrKy3WkSaR8z/7jt3FYfaRNXu+S8DXy/0Bcdar4INZYq+VzYGTehd9FCdqPqVGsUH8OCBukDZGqhpG+6kLSYbFG0SvV4vC41y4JehxBrc6iZb58d1lQPgtRG6stXqZYtfIXZtpamHWuPn1jKzB97n5qAt/ZO1lzQ4TXvpo/82PY9i5zbtbBm+gnVvSK4+Nh9PiiY2+5gx3TnQpqs6YwWaQzxZySlSNIfa0QgrigpZCYIa59YoY4NdMKWNU94mzRcKqReehJryzD31am2v0z6SQvv9aCn0sfBaR5w17YEjXu2I1zlynNvHjPPxyfg2PhHfVqNyhhmvs6ENLdfSSZWS6hcjfU8id1TEgfP+QFDhSUG9fiHoo0DvYrAH64nXhbdpXKcf2jnF2fgMx0kUhkEQBiQJ0iQJ0zgrYpyMixVHEdIihz0Dbi6gVOB61JZGm+dwu/+4NeS4PnMAqLYCL6X4qwqCs8R4FhWk12tR7cft+kkmJadYbDSUG0D+26zelbpynby7pvKvDPHXkqFiN5uRbkS9sX6rmV+xPwT7XtGPtsRSGpylIcmHaRImw3FB4uGU4MkQT7NJEhGaj4u32JHJZOcSurYJ5FIQZv3SawQDINTYeo/IckkjIEkWhkOM43Q4nth/SRwPiykO4oSSZJpmI2bo/OVlm5evuOk4Lh/gccvli3WX+8LQzv9N2ae+C9p5dULKBv8l0r7LzfuNFmyyczHF41U9NdetGPWEwnScRukE3SlKhUQByrHKYEg8YliEEOZUmW36XNQ63p9Wx/vgdI4kxn7MLTFuHOgNHxwd6se+z9D6tY3P0OD/+Rn6Ptc5AMQ4VAhqUqhlpepQPqCcV7o+UFho9/1zumn07Qfrwaz6+hUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4bb608244798cf10ad9997bf016d4392"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:43:16</sys_created_on>
+        <sys_id>6d242fd84754cf10ad9997bf016d43e5</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-16 10:26:50</sys_updated_on>
+        <ui_id>84cbe889-5c5f-4bc7-97ed-bd4ece1eba5a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXXU/bMBT9K1Weoyohbel4QyCmSUAlQLwwZjmJ01pz7cx2+kHFf9917KRRG1gjFQm0t/p++J57fY7jPm08mnpn3jgbBAEOh+PTIIiiIBiNogSHcRyNkjiIB7HnexzPCURqHDMCywVmhVmvUDgejKPxEE0lIVygwP3IFcJKEQ2xKVU5w+tHl/Ld+Ce56p07fzKjLJWEe2dPz76XYwmlNJHe2WbHdShWhmPCIPTBgd3Brtd5vUSlz9qum2m9W+sQMjVQAt8jK014SgBDhpkivjfHPMVayHVtkQSnE862hhnlGnb0TPBK0ReoOw5MXEagq4RYX71EblTWnF1ije+1LBJdSBeazARNiLLzSEmGC6YvmjYbMMk1Fdym2LZttmDFnN/acXj1BtXJgKVQAILkplGD3LWR3c/E8q5CeUV5ORPnZCLBrF5hrSWNC23wbDzCyBw2QnOc55RPUS7FgpbJgGXenzJY9DMmllBU0Snv48QA78Nccf8K7Jel+RFLarq4gW0gGQBRBgxB9giVKGQ5ygVKWKFKh8Rc2b28V99Ta3XBgI7bzmHk6E9hcNs5uI6RHZpJSSTN9TlssSCuuVf/ILkMgy3lEsFTalCohmYIX1ApuBnMzwJ2SFOyIEzkxvBLaawLZe0AZk893ZKPKa2yr0paF83G2pp1ItuzXbdt4EQWHk1k0MdXkhkU/3wq664bO4J/iCc5fZdkwy2flJAa2Vk21LMvic48PwBCxfOJYWYvXr+FytE8o4Slbd+SK+PY+Zac/J/fkk9JcgCUInt6lDPKy4cBAP0o9gfvX7HfdnhW0mvL/dKGVbKvAdzTovfSWQkHwKmUcA+1ew8WTwvE6r4vKbN711dGJ4DoaAKITo4jgE3dZj3IlplXb0FzmlX8i4nHu/FAwUZC+NomsE41w641T173BRx1UnCTbNZz+QbnjvxofEOR/kdeATNIdfWQ1S9a0nRK9LZ6FZUKvcTsd5vfMQ5VB1W29wEP0MG7sh2FW4mCUpAkCg6v+QIN4Xm0f4eEvjV3u0IOwFKN4wavenc1mFaE7hoBpZNpeTbNe+RHbXUkHxzxwfhpv6TVYbVqsDqzL/G/7XhCeP4LYMycwboQAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6d242fd84754cf10ad9997bf016d43e5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>06f12128-8a99-4e04-bbb7-0000a002eb64</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 16:29:13</sys_created_on>
+        <sys_id>8fecf1f447188350ad9997bf016d430f</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-16 10:26:50</sys_updated_on>
+        <ui_id>91d54fd7-e3be-44d4-a339-154c78ba847c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUTU/jMBD9K5XPJUqaEtLeUBEnFqQFsQeWtSbxpLXkfKztFEqU/77jfBTognaR9rDkFD/PjN97nvFdw6RgSxYJ9BeLIErDIAxnvj+L50EShUkwEyFgkLApKyBHityCqtHQuvshAIxB+732/VA0DYbJfJYEwRFAFB/Nj93fSRQdZQvwoxMUJ4s48aTFvG1/pFXNayuVfAIry+LDJbyDAm1LrIQ0lYLd7X9JLt1IJTQWbHl3P2UVaLLUombL5mDrb+9EQYKKQs8lKmHeuCS7q9yaCJErFnl/aT1+MSTfDJuT22Gz1MKRCqYMHy0WAolNBsrglOVQCLCl3rGl1TUBGkFcFWq3j9jIwlJR5mIfjXyi44PI7z4XnSGJTLGP2C/5cG09nJ2BhWuqn9paD6HpppQpSersEZhBrezqJdYHXFXO7D7FQqLG7FLVeXHZm8P2BcYuIaQ2RAIrp9bx78Vl15vy4etI8lwWnS+DUFWmoPYrsFbLpLaOTsNQYU51eA5VJYs1r3S5lV0yUcm9taKFl6nygc40cl14kDreHnkL3jnhZx18C1o6EV+oDCW3U2Z2ZqWoqZ+lkIf8Z+2Y9MIGCbxzobOAd03hklMtK3tKR21xT7wHuxZ83bEOep3RmzImsKbJBJ95a41YlJXh3axxjSn1z5vtb2CLYu9527bT8fUJ0D9+t9Nx/tzYLwQ9v0CPPIjncRgf854L93kKOikL/gCGmh4Uavv727DqYibfXMzkdIj54Ij+mfg4ojddN74tZJzSQ+ziZe7kst8YptP/V9MZf6a5HGR8+sF8Zxzb+18mB6kNkQcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8fecf1f447188350ad9997bf016d430f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>e3b42b11-aa68-4511-a766-f9a067ed798b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:15:43</sys_created_on>
+        <sys_id>fb49fb184718cf10ad9997bf016d4343</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-16 10:26:50</sys_updated_on>
+        <ui_id>e5eac8d1-16e7-40a9-992b-787937775dbe</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YbW/aPBT9K8ifgTnkhdBv1VAf7dG2Sm23L6WKHPuGegpJFjtbGeK/z44dkkHH4BmV2kf9guJ7/XLu8Tk4zu0KcYbOEHiB66ufceJiZ+TgEIIwpBNMaBgEvueiPsrIAlRPUhRl/o2kUQlE5JlKqEalM+qRcVGkZPm5jdB7nrISMnR2e9dHBSnVLBJKdLbaSh0KIyUxpKrrucXRu2pw/BagXBY6IWTJs7ltv7fTXDfBvGQa1qiP4EFCxkDhSUgqoI8WJGNE5uVyE1FTs8ssbQP3PJOm4AV5EPyHWs8JsO6YgCqRWjY2zcgyZcLJlEiikFRUVuWGuJxTEIYcBgmpUvm2GzMdLgvJVZH1EEnitBmdp9Ui+2gYQZsJOhtTCQUCCl2phm7rSK7v8+9XDcoLntWk2GSaU5JuWkQq6uJKajwrVPGbLZZNZIdnSGGhVowWap9UJNKbxetVFOjFcJ6qxjBJ8+8KneDzbEiornCodoAML1R8Woc/k5Lrcj+oadRgvdynjH+t4J3WUTCKgwkO2YAlOB54oesPCAU8gMDxwWcB9R0XrftILMXblAjREqV2KPpa6TINbZagyHCsh9CSF/JcgfoGlot137oIO8kIJpMRjh2MXYxDn+LQhdgdB2OXsPARkSYcUnZaEx2AYsdEFxbG7+BZC9XNqO70q43q8b2PJnFyK4UYvyQvqcX/xkpP45Dj1W4o+IPk6V6xQefg+JJXZfY0ij8ARKP4fw2KbcFvg/svendf9f7/1/s43Cc1iltJlUCVMDpCX63Ajb1R7DgDQoJw4Pn6aRwEg2RCcDAGNp6E8ZBLWKzXJ3DFAVAbV1w1WLexWx+wnFb1HnG2ZYSpzfTeTVsn4P1OMHo5xAju6NUGz9IG1N+nrWTSSolViiQioWuEGTLYZ+hshrI8gxnqz5DuFWlt1WHVQyHcJOrYarVem0hVEjuB02m2oxlZirqnoPfAqtREf4lEtfht/BR+O4CTxm/TCnpTQ8ouTc11pcFpeOE7Z9C17VDP9OaGd88i/2RnkfeSTqK/vcU83eUkal6ptcPUH8UT3D68vfqDjtg2r/c0zxjXFYiOPc2lAMQVfAEqxXm2/HR7xNk1VBXxObBI5uv13a6vTj39cSY9gKTNoai8Jf5EmjVr+9HBDuoatf1UYZPWpN6pjskX9r74PF16ekPGdO8LGG21ZdhsLfgQOaEXuqEfzUuALI+wfShEpPCB3LXVPzp/WYjeuc0f54sDsDa+uLFgt7BbJ9TNx65M9bCtK5Nz5DFlLPGoA171/2z0f/cTOAn9LFYWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fb49fb184718cf10ad9997bf016d4343"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=99d02f144754cf10ad9997bf016d4312"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=99d02f144754cf10ad9997bf016d4312^sys_idNOT IN286b84ac4798cf10ad9997bf016d4307,65bb7f1c4718cf10ad9997bf016d43fd,9bc2ef184754cf10ad9997bf016d4332"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">22ecc46047d8cf10ad9997bf016d4322</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>06f12128-8a99-4e04-bbb7-0000a002eb64</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:34:41</sys_created_on>
+        <sys_id>286b84ac4798cf10ad9997bf016d4307</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:11</sys_updated_on>
+        <ui_id>80e0bf5b-7336-4d2b-8197-048346072c69</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YWY+bMBD+K4jnNMUQYJO3qttKfeihbrQvVYWMPSRWHaDG7DZd7X+vbQxhE5K9sr2lSIlnzJzfDDO5cotalrWs5sWLqmKL3J19+jxyWa5p6veVm+MVuDOX1gJLVuSJXJfgjtwLzGtNh28lZ4TJpL2geJRVJcfrc3vllb3i9K6QJeNUgFVXYqG0SBDu7GqLpdUlHKfAlaSXy4IRrZ1RdZpM4yA8QZM48AIUeF4aIYiiSRylWYTjk1Ddax88tZqdeWP9HqfM10xZYNUUgmqbkOeNlKMScgpKcYZ5BSN3hXOKZSHWHUUApu9zviEsWS6VPFdf/lax70r4xNP3MlAOEmh43TGxgWvIjRVNElo/hkJ5KBPWAe96tJHxEbhiX8CQDGF5AzJQX8YHEARyiReDUsqOOyDHv1ZZpZDhmsuXx3MRHcFF/0guBtrFJn3vS8OauYGGF065zTkpeL3K3zUwdLuAnB+qqubK6e3FVVfKKig1XDX+LBizs2Vx+bHF2muWG1stkxcE8+6EpRQsraVOzZULHFZKULLCZcnyRVKK4oKZh5Ubq/GCq8M448WlUqpbyBgTbchYVQcev1b0U0M+x4LpALxVYtTD1wb4ydda621CYC1OTMD0hYoIVsoXROfLGqdTZKu3lwPJViAS07USpRb0uZet3Z704BZ0qqQ/nzfiTRdKM0QjFKE0DiJfdaFgQiIC0RQAITz1vV4X6kHKGOwYgx1tsGMtvrNrtlWZ4Bt6YhlP0LOMrPs0rQ719wL9n4JclfgqaaBpfTPKj4DoJteb5D8NhN/kEhaNHxrAJ14QBN6UhEHcAZhSgCyLU+QDGgTwBqoDNltssk7Pf0z+6ZgceAWiaew985D6OJ430x9/F6S+cwakyGn18Ia70WzgChmahGTf1JfCwNS3DdaeMzfb6O5E8Asnv/+AfQxgd8a8pFBqddZ6EMaZNKZsgbYlH2NJoQRPkBfugasf9eA6NzOB2J5dnZ7hd3dxzyoT/DarTBvk7VwMrSwpZIXovw07Qjf9H14qblGG7qXMf/R43+FucKRvuVt1LEX9O5ZxayFZJ4dWrN41C80N6G6r+Ztr+oMbwE9eDFDmh3Rv5cfBgcrfXQju4NNtG8HkL3iXPbIGhl85o3+uNiqyBFrzJ6qELjNtJWRpGKqhbU8lRP7NkU0lwJFLcLKCq8jqU8/cfW7YuImeagv78IiwD/ybsCervG/EUAmcbdj/wlj30PHts0ZiI6lqIEWBsEopnGvam/b/aM1YKxAw0iddFuKLNnVDu/4BW0wXS9kWAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">fee0c8e44758cf10ad9997bf016d4313</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>e3b42b11-aa68-4511-a766-f9a067ed798b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:26:13</sys_created_on>
+        <sys_id>65bb7f1c4718cf10ad9997bf016d43fd</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:11</sys_updated_on>
+        <ui_id>06f12128-8a99-4e04-bbb7-0000a002eb64</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4HPieGPOGlyCzYUKLCtwNL1shYGLdGJMEXyJDlpFuS/j/JHGqwpVgw97mY9UuR71KMPga5dVTt7pxfWipUK5t8fh4FQHqPvQ6Bgg8E8YFpx4YRWeQMMgy3I2gduysE3i2awqCqjt2gHy3XtuN4pyuHCVhL2929IZWshucGufwWGujg0wfzwR8jtK8wlFCip4tIZoVZ0XXA6lRGU8YzFLE0maRJFydU4LiZpESc8BYSU8vqLH3o5g08NMnxVp+9HuO07acM9rTgaBvjkUHGk1iVIi8NgA4qD02Z/QgwCv1XyGVgL5ahc4JOfrPhFtZMs84klkkaGbfB0zLsZtjBba8HwtvIEW8RBIbs7TMt6o760Ovz0sYRaun76hNSW6mHlSXsWHaVyuda7r33Da6EagV1QagbydAJHYyhqh9Y/DErcUKF8A1VFw8n9q4rmMnHZhCtJh7CUekdNvbdCYJ54SDOC8Jrwjw18D0Z4FZ+pDF1uaRZgBcsbH1I5Z0jCsRlL/rP2hFqBnZS8nQYlWGZE5RbUZ4sd6+PwpYnP/Hs4YIbArng8iic4HY0jmI1ms6QYTa+ms3Q6nWa8wBAaz4LMrQOHx+NDHUUpb1FywAuvv1fZ99iLGWRlFkfZ5b0YTy7txYWNeH0Zkr8sg3++N+5CFEX/l+F8GYTNW1N32prm/7wLj974bQfb+oYjE5aI3Hnspv/v+8CeDCDYObTT5oeX8IwdfwMPT+ydQQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">17c2ef184754cf10ad9997bf016d4332</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:37:22</sys_created_on>
+        <sys_id>9bc2ef184754cf10ad9997bf016d4332</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:11</sys_updated_on>
+        <ui_id>e3b42b11-aa68-4511-a766-f9a067ed798b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhu18NM6twFCgh65AV/QyFAYt0YlQWdIkOaln+L+PipVs6HEnm4/k43siR2b6YPvgX8299/Kg2f7n+4JJHTH6H5mGDtmeyYCdZwt2AtXHeBx3a97gblctN3zTLtcNv1tWdyiWjVgjxwIb2ED2gtw44aeJWoX0VsHw9v8M/CiVcJhEWnCkLaBj+/FLKgwWawUNKhqUGKhfCgqLSrRVkVd8VW5XZZ6Xu3XRbFdNUYoVoNhS3bXzMZn+8gaRnUJ346VPVFHmC4afAbVAGtSC8rhgHWgBwbiB7YPrCXAI4lmr4VZxlDoQHYu1n17+Ju4iz2Nhi+SI45y8hXV6yBnmRyM5PtsgjZ6RAI1KPdyovtPfZ/lxBdhCr8J1BYT0nvjQRs1RRZLU/jia88t14IPUF38pqQwHdYsgBCebPqCPa0CFHRHVHVgr9aG2zpzkpZm0dNlBUZC1ypxpaDy3DHgUntETQfZA+LcL/AZORhdPREPN08V9/auPc2cfSXE9m6YCz5204Z7oTpjETe/xXmcmPx+GQC49DXyN2OP1ymNioCVL/i90Nu4jSv2LTX8AQb5BXy8DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=99d02f144754cf10ad9997bf016d4312^sys_idNOT IN00b80b4547180310ad9997bf016d437e,1d7903c547180310ad9997bf016d4385,2ef544a04798cf10ad9997bf016d43cd,517903c547180310ad9997bf016d4386,62f544a04798cf10ad9997bf016d43ce,66f544a04798cf10ad9997bf016d43cd,6b8780a44798cf10ad9997bf016d4350,70a04c244758cf10ad9997bf016d430e,86874f8147180310ad9997bf016d43ca,917903c547180310ad9997bf016d4385,a78780a44798cf10ad9997bf016d4351,bca04c244758cf10ad9997bf016d430e,c0b80b4547180310ad9997bf016d437d,ca874f8147180310ad9997bf016d43ca,d57903c547180310ad9997bf016d4385,f0a04c244758cf10ad9997bf016d430f"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:38:45</sys_created_on>
+        <sys_id>00b80b4547180310ad9997bf016d437e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:38:45</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1701d6a9-9938-4f95-b7ad-50c09f5fb966</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.asset_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:42:06</sys_created_on>
+        <sys_id>1d7903c547180310ad9997bf016d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9f252529-fbbb-4ee0-9245-fc5f64aabc3b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{84cbe889-5c5f-4bc7-97ed-bd4ece1eba5a.Records}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:11:04</sys_created_on>
+        <sys_id>2ef544a04798cf10ad9997bf016d43cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 13:11:04</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>089465f2-e003-43c4-b1ec-f0a77cbd31bd</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:42:06</sys_created_on>
+        <sys_id>517903c547180310ad9997bf016d4386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7798539f-6d97-49a6-87e8-3c1b2c049d61</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:11:04</sys_created_on>
+        <sys_id>62f544a04798cf10ad9997bf016d43ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 13:11:04</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>988e423b-1ab4-42c3-a4d3-44ad67330e7f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:11:04</sys_created_on>
+        <sys_id>66f544a04798cf10ad9997bf016d43cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 13:11:04</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ab3e6d53-6ecf-4422-ad2b-18a5a9ca100b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{116920a6-b93b-46de-bc91-210da4c975f0.Record.potential_savings}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:17:58</sys_created_on>
+        <sys_id>6b8780a44798cf10ad9997bf016d4350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 13:17:58</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>3cc8eeb9-199a-49c8-80b7-cf0166f41297</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{84cbe889-5c5f-4bc7-97ed-bd4ece1eba5a.Records}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:47:44</sys_created_on>
+        <sys_id>70a04c244758cf10ad9997bf016d430e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 12:47:44</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7c3f5ff1-b8ef-4b64-b404-8f4db71f5f48</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:33:41</sys_created_on>
+        <sys_id>86874f8147180310ad9997bf016d43ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:33:41</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b69e37af-51e7-4f41-a9ad-61ca5e4d538c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:42:06</sys_created_on>
+        <sys_id>917903c547180310ad9997bf016d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7806c143-45e2-4565-af2d-99c3be1285f0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{116920a6-b93b-46de-bc91-210da4c975f0.Record.co2_waste_kg}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:17:58</sys_created_on>
+        <sys_id>a78780a44798cf10ad9997bf016d4351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 13:17:58</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4bc3dce6-9289-4f89-b93b-7f10d7729494</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{84cbe889-5c5f-4bc7-97ed-bd4ece1eba5a.Records}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:47:44</sys_created_on>
+        <sys_id>bca04c244758cf10ad9997bf016d430e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 12:47:44</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e04e15fb-7752-4cff-8c5d-d98e10581791</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.asset_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:38:44</sys_created_on>
+        <sys_id>c0b80b4547180310ad9997bf016d437d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:38:44</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c4208d10-33fd-4f08-9dec-a4cb29f54084</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:33:41</sys_created_on>
+        <sys_id>ca874f8147180310ad9997bf016d43ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:33:41</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b79b2261-3333-4823-9cf7-6d315dd2e1e5</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.asset_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:42:06</sys_created_on>
+        <sys_id>d57903c547180310ad9997bf016d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>72c34364-2f47-4652-b8fb-e90dd9d077d2</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>99d02f144754cf10ad9997bf016d4312</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.asset_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:47:44</sys_created_on>
+        <sys_id>f0a04c244758cf10ad9997bf016d430f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 12:47:44</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b379df62-a51e-4acb-845f-91aa686b7037</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=99d02f144754cf10ad9997bf016d4312"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_99d02f144754cf10ad9997bf016d4312</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:23:12</sys_created_on>
+        <sys_id>64250b4d47d40310ad9997bf016d4389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:23:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_99d02f144754cf10ad9997bf016d4312</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:23:12</sys_created_on>
+        <sys_id>a0250b4d47d40310ad9997bf016d439a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:23:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_99d02f144754cf10ad9997bf016d4312"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_99d02f144754cf10ad9997bf016d4312"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automatically hibernates all Development servers at 6:00 PM daily to save CO2.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>greenops_nightly_shutdown</internal_name>
+        <label_cache>[{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.first_name","label":"2 - For Each➛GreenOps Asset Record➛Assiged to➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{"e9201096-a4d9-49dd-b97a-d120a8cd4f58":[null]}},{"name":"e5eac8d1-16e7-40a9-992b-787937775dbe.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"06f12128-8a99-4e04-bbb7-0000a002eb64":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"116920a6-b93b-46de-bc91-210da4c975f0.Record.co2_waste_kg","label":"6➛Carbon Waste Alert Record➛CO2 Waste (kg)","reference":"","reference_display":"CO2 Waste (kg)","type":"decimal","base_type":"decimal","usedInstances":{},"attributes":{"":""}},{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item.asset_name","label":"2 - For Each➛GreenOps Asset Record➛Asset Name","reference":"","reference_display":"Asset Name","type":"string","base_type":"string","parent_table_name":"x_1848385_greeno_0_greenops_asset","column_name":"asset_name","usedInstances":{"91d54fd7-e3be-44d4-a339-154c78ba847c":["cpu_utilization"],"e9201096-a4d9-49dd-b97a-d120a8cd4f58":[null]}},{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to","label":"2 - For Each➛GreenOps Asset Record➛Assiged to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1848385_greeno_0_greenops_asset","column_name":"assiged_to","usedInstances":{}},{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item","label":"2 - For Each➛GreenOps Asset Record","reference":"x_1848385_greeno_0_greenops_asset","reference_display":"GreenOps Asset","type":"reference","base_type":"reference","usedInstances":{"116920a6-b93b-46de-bc91-210da4c975f0":["conditions"],"91d54fd7-e3be-44d4-a339-154c78ba847c":["asset"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.email","label":"2 - For Each➛GreenOps Asset Record➛Assiged to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{}},{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item.cpu_utilization","label":"2 - For Each➛GreenOps Asset Record➛CPU Utilization","reference":"","reference_display":"CPU Utilization","type":"decimal","base_type":"decimal","parent_table_name":"x_1848385_greeno_0_greenops_asset","column_name":"cpu_utilization","choices":[{"order":0.0}],"usedInstances":{"91d54fd7-e3be-44d4-a339-154c78ba847c":["cpu_utilization"]}},{"name":"4f3f480b-4d04-4317-b5a4-483aaac8e3a7.record","label":"5 - Update Record➛GreenOps Asset Record","reference":"x_1848385_greeno_0_greenops_asset","reference_display":"GreenOps Asset","type":"reference","base_type":"reference","usedInstances":{"e5eac8d1-16e7-40a9-992b-787937775dbe":["record"],"91d54fd7-e3be-44d4-a339-154c78ba847c":["asset"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"116920a6-b93b-46de-bc91-210da4c975f0.Record.potential_savings","label":"6➛Carbon Waste Alert Record➛Potential Savings","reference":"","reference_display":"Potential Savings","type":"currency","base_type":"currency","usedInstances":{},"attributes":{"":""}},{"name":"84cbe889-5c5f-4bc7-97ed-bd4ece1eba5a.Records","label":"1 - Look Up Records➛GreenOps Asset Records","reference":"x_1848385_greeno_0_greenops_asset","reference_display":"GreenOps Asset","type":"records","base_type":"records","usedInstances":{"e3b42b11-aa68-4511-a766-f9a067ed798b":["items"],"e9201096-a4d9-49dd-b97a-d120a8cd4f58":[null]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>GreenOps Nightly Shutdown</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="GreenOps Nightly Shutdown">99d02f144754cf10ad9997bf016d4312</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:47:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>98356f5c4754cf10ad9997bf016d43ea</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=98356f5c4754cf10ad9997bf016d43ea"/>
+    <sys_variable_value action="delete_multiple" query="document_key=98356f5c4754cf10ad9997bf016d43ea"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=98356f5c4754cf10ad9997bf016d43ea"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=98356f5c4754cf10ad9997bf016d43ea^sys_idNOT IN5c356f5c4754cf10ad9997bf016d43eb"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>98356f5c4754cf10ad9997bf016d43ea</id>
+        <name>GreenOps Nightly Shutdown</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:47:49</sys_created_on>
+        <sys_id>5c356f5c4754cf10ad9997bf016d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 10:47:49</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5c356f5c4754cf10ad9997bf016d43eb"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=98356f5c4754cf10ad9997bf016d43ea^sys_idNOT INa625cb4d47d40310ad9997bf016d4325,b225cb4d47d40310ad9997bf016d4345"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="GreenOps Nightly Shutdown">98356f5c4754cf10ad9997bf016d43ea</model>
+        <model_id>98356f5c4754cf10ad9997bf016d43ea</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_98356f5c4754cf10ad9997bf016d43ea</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:23:21</sys_created_on>
+        <sys_id>a625cb4d47d40310ad9997bf016d4325</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a625cb4d47d40310ad9997bf016d4325"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="GreenOps Nightly Shutdown">98356f5c4754cf10ad9997bf016d43ea</model>
+        <model_id>98356f5c4754cf10ad9997bf016d43ea</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_98356f5c4754cf10ad9997bf016d43ea</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:23:21</sys_created_on>
+        <sys_id>b225cb4d47d40310ad9997bf016d4345</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b225cb4d47d40310ad9997bf016d4345"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=98356f5c4754cf10ad9997bf016d43ea"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=98356f5c4754cf10ad9997bf016d43ea"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=98356f5c4754cf10ad9997bf016d43ea^sys_idNOT INfe25cb4d47d40310ad9997bf016d4362"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">98356f5c4754cf10ad9997bf016d43ea</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:23:21</sys_created_on>
+        <sys_id>fe25cb4d47d40310ad9997bf016d4362</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:13</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TTW/bMAz9K4FOG5CDk6zNktswoECAbgWarpdiMGSJcoTJkifJbr2g/32kPxK3M4YB3U2iyMfHx6eHIzM8A8O27LaysyvjHmc7y+ZM2wjecnPXlICP4uC0AIx3h2sdIts+HJm656aihIyLH7l3lZWYpK5HmIowtZ2dM2bvJChemfiecncFzwmBznswICJItlXcBMDItzC+fdEhaJv3gef5iIByHv5O4GXGG9p+n7OCW8mj8805ybviDorS8AinoPMSPNsukmTOaiK6b8JOdl0tL6i/r2xKDFNNstf9NHiUOiBYc3+OiIM20oNF5ZFCyT0iRMI/vnrS1OIy2SRivdys18tktUoSdZEpoYRYf1wkl4uLDQJOr36SWHzlg/Fk8BTBypFgf6rjgcsba86BAxqsm6rgT0H/QvAPCeUpwDFEP/HpmvZqDEIQi9A60Py71eopr/aDJGSmKawXrqmnzDZIQb7ou33+/wQXbya4JIKddDdl1A7Nwla0Wp4ZqglN6BbuQWBJGr3OcyzEImeqwn6d8kXPfuTSKuC2oCRH0IqH77E/uMfbYZ1X2raU+kfjBDenG4/YOasi6XdkXNYcK8jR0WOP59YV6c+KKtp/MvRK24koIQivy/hJRF3D6dP+BvLQA67rBAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=98356f5c4754cf10ad9997bf016d43ea^sys_idNOT IN0fe0c8e44758cf10ad9997bf016d43cf,18356f5c4754cf10ad9997bf016d43f9,47e0c8e44758cf10ad9997bf016d43cb,54356f5c4754cf10ad9997bf016d43fb,7d33caf047588350ad9997bf016d43ce,b6ecc46047d8cf10ad9997bf016d43e6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">98356f5c4754cf10ad9997bf016d43ea</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>06f12128-8a99-4e04-bbb7-0000a002eb64</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:48:59</sys_created_on>
+        <sys_id>0fe0c8e44758cf10ad9997bf016d43cf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <ui_id>e9201096-a4d9-49dd-b97a-d120a8cd4f58</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0fe0c8e44758cf10ad9997bf016d43cf"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">98356f5c4754cf10ad9997bf016d43ea</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:47:49</sys_created_on>
+        <sys_id>18356f5c4754cf10ad9997bf016d43f9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 10:47:49</sys_updated_on>
+        <ui_id>84cbe889-5c5f-4bc7-97ed-bd4ece1eba5a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXXU/bMBT9K1Weoyohbel4QyCmSUAlQLwwZjmJ01pz7cx2+kHFf9917KRRG1gjFQm0t/p++J57fY7jPm08mnpn3jgbBAEOh+PTIIiiIBiNogSHcRyNkjiIB7HnexzPCURqHDMCywVmhVmvUDgejKPxEE0lIVygwP3IFcJKEQ2xKVU5w+tHl/Ld+Ce56p07fzKjLJWEe2dPz76XYwmlNJHe2WbHdShWhmPCIPTBgd3Brtd5vUSlz9qum2m9W+sQMjVQAt8jK014SgBDhpkivjfHPMVayHVtkQSnE862hhnlGnb0TPBK0ReoOw5MXEagq4RYX71EblTWnF1ije+1LBJdSBeazARNiLLzSEmGC6YvmjYbMMk1Fdym2LZttmDFnN/acXj1BtXJgKVQAILkplGD3LWR3c/E8q5CeUV5ORPnZCLBrF5hrSWNC23wbDzCyBw2QnOc55RPUS7FgpbJgGXenzJY9DMmllBU0Snv48QA78Nccf8K7Jel+RFLarq4gW0gGQBRBgxB9giVKGQ5ygVKWKFKh8Rc2b28V99Ta3XBgI7bzmHk6E9hcNs5uI6RHZpJSSTN9TlssSCuuVf/ILkMgy3lEsFTalCohmYIX1ApuBnMzwJ2SFOyIEzkxvBLaawLZe0AZk893ZKPKa2yr0paF83G2pp1ItuzXbdt4EQWHk1k0MdXkhkU/3wq664bO4J/iCc5fZdkwy2flJAa2Vk21LMvic48PwBCxfOJYWYvXr+FytE8o4Slbd+SK+PY+Zac/J/fkk9JcgCUInt6lDPKy4cBAP0o9gfvX7HfdnhW0mvL/dKGVbKvAdzTovfSWQkHwKmUcA+1ew8WTwvE6r4vKbN711dGJ4DoaAKITo4jgE3dZj3IlplXb0FzmlX8i4nHu/FAwUZC+NomsE41w641T173BRx1UnCTbNZz+QbnjvxofEOR/kdeATNIdfWQ1S9a0nRK9LZ6FZUKvcTsd5vfMQ5VB1W29wEP0MG7sh2FW4mCUpAkCg6v+QIN4Xm0f4eEvjV3u0IOwFKN4wavenc1mFaE7hoBpZNpeTbNe+RHbXUkHxzxwfhpv6TVYbVqsDqzL/G/7XhCeP4LYMycwboQAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=18356f5c4754cf10ad9997bf016d43f9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">98356f5c4754cf10ad9997bf016d43ea</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>e3b42b11-aa68-4511-a766-f9a067ed798b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:48:59</sys_created_on>
+        <sys_id>47e0c8e44758cf10ad9997bf016d43cb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 15:31:02</sys_updated_on>
+        <ui_id>e5eac8d1-16e7-40a9-992b-787937775dbe</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YbW/aPBT9K8ifgTnkhdBv1VAf7dG2Sm23L6WKHPuGegpJFjtbGeK/z44dkkHH4BmV2kf9guJ7/XLu8Tk4zu0KcYbOEHiB66ufceJiZ+TgEIIwpBNMaBgEvueiPsrIAlRPUhRl/o2kUQlE5JlKqEalM+qRcVGkZPm5jdB7nrISMnR2e9dHBSnVLBJKdLbaSh0KIyUxpKrrucXRu2pw/BagXBY6IWTJs7ltv7fTXDfBvGQa1qiP4EFCxkDhSUgqoI8WJGNE5uVyE1FTs8ssbQP3PJOm4AV5EPyHWs8JsO6YgCqRWjY2zcgyZcLJlEiikFRUVuWGuJxTEIYcBgmpUvm2GzMdLgvJVZH1EEnitBmdp9Ui+2gYQZsJOhtTCQUCCl2phm7rSK7v8+9XDcoLntWk2GSaU5JuWkQq6uJKajwrVPGbLZZNZIdnSGGhVowWap9UJNKbxetVFOjFcJ6qxjBJ8+8KneDzbEiornCodoAML1R8Woc/k5Lrcj+oadRgvdynjH+t4J3WUTCKgwkO2YAlOB54oesPCAU8gMDxwWcB9R0XrftILMXblAjREqV2KPpa6TINbZagyHCsh9CSF/JcgfoGlot137oIO8kIJpMRjh2MXYxDn+LQhdgdB2OXsPARkSYcUnZaEx2AYsdEFxbG7+BZC9XNqO70q43q8b2PJnFyK4UYvyQvqcX/xkpP45Dj1W4o+IPk6V6xQefg+JJXZfY0ij8ARKP4fw2KbcFvg/svendf9f7/1/s43Cc1iltJlUCVMDpCX63Ajb1R7DgDQoJw4Pn6aRwEg2RCcDAGNp6E8ZBLWKzXJ3DFAVAbV1w1WLexWx+wnFb1HnG2ZYSpzfTeTVsn4P1OMHo5xAju6NUGz9IG1N+nrWTSSolViiQioWuEGTLYZ+hshrI8gxnqz5DuFWlt1WHVQyHcJOrYarVem0hVEjuB02m2oxlZirqnoPfAqtREf4lEtfht/BR+O4CTxm/TCnpTQ8ouTc11pcFpeOE7Z9C17VDP9OaGd88i/2RnkfeSTqK/vcU83eUkal6ptcPUH8UT3D68vfqDjtg2r/c0zxjXFYiOPc2lAMQVfAEqxXm2/HR7xNk1VBXxObBI5uv13a6vTj39cSY9gKTNoai8Jf5EmjVr+9HBDuoatf1UYZPWpN6pjskX9r74PF16ekPGdO8LGG21ZdhsLfgQOaEXuqEfzUuALI+wfShEpPCB3LXVPzp/WYjeuc0f54sDsDa+uLFgt7BbJ9TNx65M9bCtK5Nz5DFlLPGoA171/2z0f/cTOAn9LFYWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=47e0c8e44758cf10ad9997bf016d43cb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">98356f5c4754cf10ad9997bf016d43ea</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>06f12128-8a99-4e04-bbb7-0000a002eb64</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:47:49</sys_created_on>
+        <sys_id>54356f5c4754cf10ad9997bf016d43fb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 12:48:59</sys_updated_on>
+        <ui_id>4f3f480b-4d04-4317-b5a4-483aaac8e3a7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5XPpUqaNqS9ISpWK7EgwYoLoGgST1pLjpO1HaBb9b/vOHHaClgWJC5oe8p82e+9zktuN0xwNmcT5EE4C+M8CqNoHATjZBJmcZSFYx4BYsiGTEGJ1KkxrzSn+AFk4xKbDUbZZJyF4RFAnBxNpu7pOI6PihkE8THy41mSjYTFcrulOS5MLWF948cpk6+E5BoVm9/eD1kNmm6yqNl886z0XqgSMpTUetVjfY7drmsX8ypvSlQ2FX3y3E8ufGXwfUEVGnJwwmDI8Mmi4khACpAGh6wExcFWes3mVjeU0Aj8Usn1rmMllO2IlvBkxG+6eRK4vgKJWe5F2IWpF6hLFwuwcE0n57bRO70qkaPpNOFYQCPt6WGua7israhUN2Ihk/10JZtSXXSKsN0BB/9HYwgE1o6nQ97RKq5X1eNVD/JMqFYST1FWOchdBNZqkTXWwdkwlNhqXEJdC7VMa109iHaYoJSjpaRgVMjqke40YqlGkDvcI1IVRmeUX7TpG9DCkfhBx9DwdsjM2pxKMGZPhTRMfzUOSUfMU0hbFVoJ0nYT3HCuRW1P6KoH9MC3Q2+GbPrWhuWz/UIdnLk3xFMaJpMkSqbpUiOqKg38Q21Sgov2pQm+ufplbQYnvv4xS7wDcG+Jn+0ivE7Au+JF7vxwdnDRFbwnpp/mieQrecLT+PKm+JcVgvGbL9uDTWq33xzYwFiwjblrgiDiK5GhVmCRv9z9v/Z9zAPvQNp74Eyg5OYV6L0BsCSAFtOOyjMT+OLgxhd3H4dPc0IYB+3vC/nhv/lG3P8Bsd/XSTIJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=54356f5c4754cf10ad9997bf016d43fb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">98356f5c4754cf10ad9997bf016d43ea</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>06f12128-8a99-4e04-bbb7-0000a002eb64</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 16:56:44</sys_created_on>
+        <sys_id>7d33caf047588350ad9997bf016d43ce</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 15:31:02</sys_updated_on>
+        <ui_id>91d54fd7-e3be-44d4-a339-154c78ba847c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUTU/jMBD9K5XPJUqaEtLeUBEnFqQFsQeWtSbxpLXkfKztFEqU/77jfBTognaR9rDkFD/PjN97nvFdw6RgSxYJ9BeLIErDIAxnvj+L50EShUkwEyFgkLApKyBHityCqtHQuvshAIxB+732/VA0DYbJfJYEwRFAFB/Nj93fSRQdZQvwoxMUJ4s48aTFvG1/pFXNayuVfAIry+LDJbyDAm1LrIQ0lYLd7X9JLt1IJTQWbHl3P2UVaLLUombL5mDrb+9EQYKKQs8lKmHeuCS7q9yaCJErFnl/aT1+MSTfDJuT22Gz1MKRCqYMHy0WAolNBsrglOVQCLCl3rGl1TUBGkFcFWq3j9jIwlJR5mIfjXyi44PI7z4XnSGJTLGP2C/5cG09nJ2BhWuqn9paD6HpppQpSersEZhBrezqJdYHXFXO7D7FQqLG7FLVeXHZm8P2BcYuIaQ2RAIrp9bx78Vl15vy4etI8lwWnS+DUFWmoPYrsFbLpLaOTsNQYU51eA5VJYs1r3S5lV0yUcm9taKFl6nygc40cl14kDreHnkL3jnhZx18C1o6EV+oDCW3U2Z2ZqWoqZ+lkIf8Z+2Y9MIGCbxzobOAd03hklMtK3tKR21xT7wHuxZ83bEOep3RmzImsKbJBJ95a41YlJXh3axxjSn1z5vtb2CLYu9527bT8fUJ0D9+t9Nx/tzYLwQ9v0CPPIjncRgf854L93kKOikL/gCGmh4Uavv727DqYibfXMzkdIj54Ij+mfg4ojddN74tZJzSQ+ziZe7kst8YptP/V9MZf6a5HGR8+sF8Zxzb+18mB6kNkQcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7d33caf047588350ad9997bf016d43ce"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">98356f5c4754cf10ad9997bf016d43ea</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>06f12128-8a99-4e04-bbb7-0000a002eb64</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:41:23</sys_created_on>
+        <sys_id>b6ecc46047d8cf10ad9997bf016d43e6</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 16:56:44</sys_updated_on>
+        <ui_id>116920a6-b93b-46de-bc91-210da4c975f0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX227bOBD9FUHPtleKbEnOW5HAQIFuAzTZ7EO3ICiRSoilSZWkkjhG/r1DiZJdW/Vl4yyy2CdbwxHnzOXMjL4ufUb8c39CgmkxnU7SJAiiKAjiOMpxmGVRnGdBloX+wBd4TkFTS2WQWZQURA+YV52MUJ2DjDBdcry4dUfPnpEeBnl+zzhRVPjnX78N/BIruM5Q5Z8vN44OxcNxRjmoXoNx76YB1IOx/jkHG5Ll7fMn9+pFK5SKWCjRwKdPhgpCAUOBuaYDf44FwUaqRSdRFJMrwVeCeyYM3OZb5SfNnsFedGb1Cgpe5bQ56x6RC1EjLi6xwddGVbmplFNtwGqIx7JzE9tAPm8GHdcxd/CDl8FKvwt8X5LcC+ELxJvQAlfcXPwzm+GxNs+szcbBq9IwCVn3I5sXnPHWfcmrufjc5NLvEN5ug3Anlz/XXAe70hBsWtqE2gy5dBXX9/LxS5uNGRM1LnfIZY5594SNUSyrjI3L0i8IKhjlBDHBmbCWIG22fCinc7CA5rgsmbhDpZIPrL4VfJmP7jg8jAouH20s2J0Y4dx6PoLCwqMZyC9r8S1WzEbhd7gGXh5Yg/fwqrOHdK5YadAjI3fUrKy3WkSaR8z/7jt3FYfaRNXu+S8DXy/0Bcdar4INZYq+VzYGTehd9FCdqPqVGsUH8OCBukDZGqhpG+6kLSYbFG0SvV4vC41y4JehxBrc6iZb58d1lQPgtRG6stXqZYtfIXZtpamHWuPn1jKzB97n5qAt/ZO1lzQ4TXvpo/82PY9i5zbtbBm+gnVvSK4+Nh9PiiY2+5gx3TnQpqs6YwWaQzxZySlSNIfa0QgrigpZCYIa59YoY4NdMKWNU94mzRcKqReehJryzD31am2v0z6SQvv9aCn0sfBaR5w17YEjXu2I1zlynNvHjPPxyfg2PhHfVqNyhhmvs6ENLdfSSZWS6hcjfU8id1TEgfP+QFDhSUG9fiHoo0DvYrAH64nXhbdpXKcf2jnF2fgMx0kUhkEQBiQJ0iQJ0zgrYpyMixVHEdIihz0Dbi6gVOB61JZGm+dwu/+4NeS4PnMAqLYCL6X4qwqCs8R4FhWk12tR7cft+kkmJadYbDSUG0D+26zelbpynby7pvKvDPHXkqFiN5uRbkS9sX6rmV+xPwT7XtGPtsRSGpylIcmHaRImw3FB4uGU4MkQT7NJEhGaj4u32JHJZOcSurYJ5FIQZv3SawQDINTYeo/IckkjIEkWhkOM43Q4nth/SRwPiykO4oSSZJpmI2bo/OVlm5evuOk4Lh/gccvli3WX+8LQzv9N2ae+C9p5dULKBv8l0r7LzfuNFmyyczHF41U9NdetGPWEwnScRukE3SlKhUQByrHKYEg8YliEEOZUmW36XNQ63p9Wx/vgdI4kxn7MLTFuHOgNHxwd6se+z9D6tY3P0OD/+Rn6Ptc5AMQ4VAhqUqhlpepQPqCcV7o+UFho9/1zumn07Qfrwaz6+hUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b6ecc46047d8cf10ad9997bf016d43e6"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=98356f5c4754cf10ad9997bf016d43ea"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=98356f5c4754cf10ad9997bf016d43ea^sys_idNOT IN10356f5c4754cf10ad9997bf016d43f7,3aecc46047d8cf10ad9997bf016d43ee,43e0c8e44758cf10ad9997bf016d43e1"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">17c2ef184754cf10ad9997bf016d4332</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">98356f5c4754cf10ad9997bf016d43ea</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:47:49</sys_created_on>
+        <sys_id>10356f5c4754cf10ad9997bf016d43f7</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:13</sys_updated_on>
+        <ui_id>e3b42b11-aa68-4511-a766-f9a067ed798b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L34mCMhHQ96qVpUq3V2ltOrLqUKLvSTWGZuzTVIO8d9vHQit+tgn2PHu7MxgemZa37TevZhb5+RBs93vt4hJHTB675mGGtmOSY+1YxE7gWpD3ffbFS9xu80Xa76uFquS3yzyGxSLUqyQY4olrCHeIzdWuGGgUSFdo6B7/T4DP0olLE4iG7CkzaNlu/7LkRS0IM1FladJzpfZZpklSbZdpeVmWaaZWAKKDREqKFFR6+Pk7otZ3zWhtKOECfgxzexnlB5BRJZEDN89aoG0vgLlMGI1aAHe2I7tvG0JsAjiSatu7jhK7YmOhd53J//RxjRJQmOFZIjjeDiXxZTjCFf34OGZqLlv7dTKj0ZydGMUAitolb/7jI0NT42XRo8jHkp1nTaqrfWvMQk2E1w/GyGtIxHYBKNB+uSjej6a8/6q8kHqSyjToTIc1FyB91aWrQ96eoYKayIqamgaqQ9FY81JXoZJSx0fFBVxpcyZloYrGgMPwmPKFeIHwu8v8CtYGVz8JBoaHiLmOnenwLkPLxRi8bcNSkZnk4dijCGMcCsbf0sLTjjJHd7CrR+550y5dCThJWCP138lHHR0gyT/DJ2N/RPEf2DDf1bULxl1AwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">22ecc46047d8cf10ad9997bf016d4322</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">98356f5c4754cf10ad9997bf016d43ea</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>06f12128-8a99-4e04-bbb7-0000a002eb64</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:41:23</sys_created_on>
+        <sys_id>3aecc46047d8cf10ad9997bf016d43ee</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <ui_id>80e0bf5b-7336-4d2b-8197-048346072c69</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1ZbW/iOBD+K1E+c1ycQCh8W7VXaaW921NB/bJaRY4zAWtNknWcdrmq//3GifMCBLbs0hUrVUJqPXbGz8w8z8SGJzstVFaofJG+y3O+TOzZp88Dmyfahv8/2Qldgz2zo0JSxdMkUJsM7IH9QEWh7fAtE5xxFdQLcC7ieSbo5t4s+csssTpL2IqLSILZLqMSd1Eg7dnTzhSP0MNoOvHGV2Q08RyPeI4T+gR8fzTxw9ink6sxOhQ0BIFLb8we1qLCeQB++WeGe6Wc1eMPxsV1bUxlpCERxxlgnAqSCBBNTEUOA3tNk4iqVG4aiwQafUxEa1jxRKE/Wy/+lvP/cMeRo9fFgPExqOaaYWDyVpnjG6roXMmCqUKapRXcqi51wH3ZPVYcE5TzPGh93IHA6Qfo8yHNXI8P0vXxL0gGiaLLXi9ZM9vjx33GQkcQ00Ko6/OFSM4QonumED0dYlW+j1k5NbM9zTsairq4qSjWyT8VX+0mIffHhFYtufm+3oocUUGmKaw5aQgaz1fp413Nv1uelFjNpEgZFc2IKiV5WChdmicbBKzRUbCmWcaTZZDJ9IGXD2MY6+FS4GAYi/QRN9VdZUiZBjJExdDhLdpvSvM9lVwn4G90gw8/D+x8k18LmudtGlAewddCI6mSYmIIyhSWjzDJM/WO6QoauLpoRvidqii+BhmUrS1AIKDHnfrtN66T+1QYk8gnPgknnu9in/JGzGfgTwEIoVPX6fSpDpdKXFaJy9K4LAPsxRGYZlZmvbQHnYm6q2E7gT8Xlf0VGlvp6xydra8V7GvnJOn8LvxHFuVBRWcTW7n5q+iiolLLrfMK4crxPM+ZsrE3aYQQRQBxPAmJC6RXCC3le8AZjiPxYFmmqsvt9431jdlvzC7J0/OCJtOJ84dD8GM5zkx/3H2qu9YcWJpE+cmch5iMxuzQITWEnkPqLuM7oLd7+rb9w76b+rhygUfVN9r/QtrvHWWDFIHo4neEQGNVgtuhfm0+jfYRoyPijA/Q3vU7tF+UBx25exK3OhBfHswpNzjvAmXRXivqvO+Wp++mFkKcyu7LujE0l57jd6nvbEZO2sz96VtNQ8Xem0w9uyN2TOklar1GyDbBsZtlZ5nhcEvE0xvD9hcbP9wlXuc+RGJ3HB3sDRPvSG/Yvwe9APqPXoRGF9gffslr8yeV1P92G7wpDNOygqgQZ9ZTHI7HeMg8oCff3T5iYuYttQIrTgWmVI86qA6hNQlrGbwtnruO3YhnfEbxeO62eNg66YLrE9K8nb4AQZ1+Do3nQCVb3XIQusRlXX63r9s+a5ZXvptMM54jhIW2va9/TdATG4yQs67pMZVfNPjW9vw/hgXuiJcYAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">fee0c8e44758cf10ad9997bf016d4313</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="GreenOps Nightly Shutdown">98356f5c4754cf10ad9997bf016d43ea</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>e3b42b11-aa68-4511-a766-f9a067ed798b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:48:59</sys_created_on>
+        <sys_id>43e0c8e44758cf10ad9997bf016d43e1</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <ui_id>06f12128-8a99-4e04-bbb7-0000a002eb64</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU8bMRD8K5GfL9F95BLCGwIhIdEiNZSXgk579h6x6thX25eQRvnvXd9dAiqpCiqPfYvH692ZuR1ly0zj68a7W3PmnHzU7PTbQ8SkDhj93jINS2SnjBstpJdGFy0QsRWoJlxcVYOvDu3grK6tWaEbzBeNF2atqUZIVyvY3L2hlC+kEhb7+TVYmuLRstPtb1dSUKcqhiqZ8YRn6SRL4zg9GSflJCuTVGSAkFFDBSUqKj3fEx9ct0j0R0V+UwfceSv1Y3++7rvM96CxIrBK4ojhk0ctkPhUoBxGbAlagDd2c0AsgrjR6hlYSO2pHQvFT07+pIFpnofCCkkix+7ycCx6Czu4ugAPRKXhvrF9KV8YydF15gisoFH+/CXWFdzUQWr3xEOp9q+Napb6c+cIOzTYfzFCGkcksA5KA/VeRzVfmPWXPctLqVtX+ktlOKjDCTx5VzY+8NkyVLikRsUS6pocLcImyPYxcVmOHhUdRpUyaxoa9nEEPBAfkbEwuiT8ooXvwMqg4hO1occdzRKc5EW7u9SObEK2i5jbuHMFzj2LJHeLH02g2EnuxRWdP+EJt7L2ZzR5hb2OXfQ6Ci9SsN1ijsBPRDJMJjgdjmOYDWeztBxOT6azbDqd5qLEEbSbD6pwHjzudvdNHGeiQ2mRXiXmo9q+L10zyKs8ifPj6RpPjqXrSK7eGan0L5EK3/ONiYrj+H+k/jlS0hVdEHpt7fAPTNRDiE838+A1l46o3Qbsav8fFC42tFySv4TWxn4Pop6x3S8i9yVkzQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=98356f5c4754cf10ad9997bf016d43ea^sys_idNOT IN0fe00ce44758cf10ad9997bf016d4318,1379c3c547180310ad9997bf016d437c,36ec086047d8cf10ad9997bf016d4321,3aec086047d8cf10ad9997bf016d4320,5379c3c547180310ad9997bf016d437b,5779c3c547180310ad9997bf016d437c,83e00ce44758cf10ad9997bf016d4318,9779c3c547180310ad9997bf016d437b,9b79c3c547180310ad9997bf016d437a,9b79c3c547180310ad9997bf016d437c,c7e00ce44758cf10ad9997bf016d4318,db79c3c547180310ad9997bf016d437b,df79c3c547180310ad9997bf016d437c,f2ec086047d8cf10ad9997bf016d4320,faec086047d8cf10ad9997bf016d4321,feec086047d8cf10ad9997bf016d4320"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.asset_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:48:59</sys_created_on>
+        <sys_id>0fe00ce44758cf10ad9997bf016d4318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 12:48:59</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b379df62-a51e-4acb-845f-91aa686b7037</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:42:14</sys_created_on>
+        <sys_id>1379c3c547180310ad9997bf016d437c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1701d6a9-9938-4f95-b7ad-50c09f5fb966</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:41:24</sys_created_on>
+        <sys_id>36ec086047d8cf10ad9997bf016d4321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 13:41:24</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>988e423b-1ab4-42c3-a4d3-44ad67330e7f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{116920a6-b93b-46de-bc91-210da4c975f0.Record.potential_savings}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:41:24</sys_created_on>
+        <sys_id>3aec086047d8cf10ad9997bf016d4320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 13:41:24</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>3cc8eeb9-199a-49c8-80b7-cf0166f41297</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.asset_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:42:14</sys_created_on>
+        <sys_id>5379c3c547180310ad9997bf016d437b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c4208d10-33fd-4f08-9dec-a4cb29f54084</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.asset_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:42:14</sys_created_on>
+        <sys_id>5779c3c547180310ad9997bf016d437c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>72c34364-2f47-4652-b8fb-e90dd9d077d2</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{84cbe889-5c5f-4bc7-97ed-bd4ece1eba5a.Records}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:48:59</sys_created_on>
+        <sys_id>83e00ce44758cf10ad9997bf016d4318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 12:48:59</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7c3f5ff1-b8ef-4b64-b404-8f4db71f5f48</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:42:14</sys_created_on>
+        <sys_id>9779c3c547180310ad9997bf016d437b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7798539f-6d97-49a6-87e8-3c1b2c049d61</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:42:14</sys_created_on>
+        <sys_id>9b79c3c547180310ad9997bf016d437a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b69e37af-51e7-4f41-a9ad-61ca5e4d538c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:42:14</sys_created_on>
+        <sys_id>9b79c3c547180310ad9997bf016d437c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b79b2261-3333-4823-9cf7-6d315dd2e1e5</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{84cbe889-5c5f-4bc7-97ed-bd4ece1eba5a.Records}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:48:59</sys_created_on>
+        <sys_id>c7e00ce44758cf10ad9997bf016d4318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 12:48:59</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e04e15fb-7752-4cff-8c5d-d98e10581791</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.assiged_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:42:14</sys_created_on>
+        <sys_id>db79c3c547180310ad9997bf016d437b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7806c143-45e2-4565-af2d-99c3be1285f0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item.asset_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:42:14</sys_created_on>
+        <sys_id>df79c3c547180310ad9997bf016d437c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9f252529-fbbb-4ee0-9245-fc5f64aabc3b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e3b42b11-aa68-4511-a766-f9a067ed798b.item}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:41:24</sys_created_on>
+        <sys_id>f2ec086047d8cf10ad9997bf016d4320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 13:41:24</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ab3e6d53-6ecf-4422-ad2b-18a5a9ca100b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{116920a6-b93b-46de-bc91-210da4c975f0.Record.co2_waste_kg}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:41:24</sys_created_on>
+        <sys_id>faec086047d8cf10ad9997bf016d4321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 13:41:24</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4bc3dce6-9289-4f89-b93b-7f10d7729494</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>98356f5c4754cf10ad9997bf016d43ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{84cbe889-5c5f-4bc7-97ed-bd4ece1eba5a.Records}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 13:41:24</sys_created_on>
+        <sys_id>feec086047d8cf10ad9997bf016d4320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 13:41:24</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>089465f2-e003-43c4-b1ec-f0a77cbd31bd</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=98356f5c4754cf10ad9997bf016d43ea"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_98356f5c4754cf10ad9997bf016d43ea</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:23:21</sys_created_on>
+        <sys_id>2a25cb4d47d40310ad9997bf016d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:23:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_98356f5c4754cf10ad9997bf016d43ea</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 16:23:21</sys_created_on>
+        <sys_id>3e25cb4d47d40310ad9997bf016d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:23:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_98356f5c4754cf10ad9997bf016d43ea"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_98356f5c4754cf10ad9997bf016d43ea"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>99d02f144754cf10ad9997bf016d4312</sys_id>
+        <latest_snapshot>98356f5c4754cf10ad9997bf016d43ea</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch6-01-16-2026_02-02-2026_1554.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=99d02f144754cf10ad9997bf016d4312^sys_idNOT IN9c35af5c4754cf10ad9997bf016d4335"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"9c35af5c4754cf10ad9997bf016d4335","name":"plan","plan_signature":null}}</plan>
+        <plan_id>99d02f144754cf10ad9997bf016d4312</plan_id>
+        <snapshot>fd2dba1d47548310ad9997bf016d439b</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:47:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9c35af5c4754cf10ad9997bf016d4335</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 16:42:14</sys_updated_on>
+        <trigger display_value="">0f250f4d47d40310ad9997bf016d4307</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=99d02f144754cf10ad9997bf016d4312"/>
+</record_update>

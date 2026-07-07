@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_tab">
+    <par_dashboard_tab action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <background_color/>
+        <dashboard display_value="GreenOps Sustainability Command Center">2babdb584714cf10ad9997bf016d43af</dashboard>
+        <name>New Tab 5</name>
+        <order>0</order>
+        <sys_class_name>par_dashboard_tab</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:06:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2bab13984714cf10ad9997bf016d43c4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>New Tab 5</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name>par_dashboard_tab_2bab13984714cf10ad9997bf016d43c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 14:30:24</sys_updated_on>
+    </par_dashboard_tab>
+</record_update>

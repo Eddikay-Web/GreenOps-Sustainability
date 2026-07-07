@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">efab13984714cf10ad9997bf016d43c9</canvas>
+        <component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","scoreSize":"auto","headingPosition":"top","sparklineStyle":"area","scoreIcon":"","iconStyle":"background","showScoreDate":false,"useRelativeScoreTime":false,"showScoreUpdateTime":false,"showZero":true,"rangesConfig":{},"colorConfig":{"type":"singleColor","values":[{"color":"65b3034ea9fe3dba010c3a75c4deaa0e","metric":"ZEdGaWJHVjRYekU0TkRnek9EVmZaM0psWlc1dlh6QmZZMkZ5WW05dVgzZGhjM1JsWDJGc1pYSjBNVGMzTmpBM05URXhOekUyT0E9PTE3NzYwNzUxMTg4NTE=","rules":[]}]},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Carbon Waste Alert","sourceType":"table","tableOrViewName":"x_1848385_greeno_0_carbon_waste_alert","filterQuery":"","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE4NDgzODVfZ3JlZW5vXzBfY2FyYm9uX3dhc3RlX2FsZXJ0MTc3NjA3NTExNzE2OA==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headerTitle":"Total Carbon Offset (kg CO2e)","headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzE4NDgzODVfZ3JlZW5vXzBfY2FyYm9uX3dhc3RlX2FsZXJ0MTc3NjA3NTExNzE2OA==","id":"ZEdGaWJHVjRYekU0TkRnek9EVmZaM0psWlc1dlh6QmZZMkZ5WW05dVgzZGhjM1JsWDJGc1pYSjBNVGMzTmpBM05URXhOekUyT0E9PTE3NzYwNzUxMTg4NTE=","aggregateFunction":"SUM","numberFormat":{"customFormat":true,"rounding":"HALF_UP","decimalPrecision":2,"abbreviationEnabled":false,"numberInTooltipsEnabled":false,"thousandSeparatorEnabled":true},"axisId":"primary","aggregateField":"co2_waste_kg"}],"groupBy":null,"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"4doarrzq","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":"30","hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","sharedContext":{"colorDetails":{"65b3034ea9fe3dba010c3a75c4deaa0e":[{"sysId":"65b3034ea9fe3dba010c3a75c4deaa0e","cssCustomProperty":"","defaultColor":"60,179,113"}]},"datasourceConfigurations":{"table":{"timeZone":"SESSION","useSeriesLabels":false}}},"colors":{}}</component_props>
+        <h>22</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 10:24:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4dcfdb904754cf10ad9997bf016d4324</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name>par_dashboard_widget_4dcfdb904754cf10ad9997bf016d4324</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 14:30:24</sys_updated_on>
+        <visualization/>
+        <w>22</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

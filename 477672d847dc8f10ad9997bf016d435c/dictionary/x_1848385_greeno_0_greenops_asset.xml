@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="38c7ba5c47dc8f10ad9997bf016d4319" label="GreenOps Asset" max_length="40" name="x_1848385_greeno_0_greenops_asset" type="collection">
+        <element default="10" label="CPU Utilization" max_length="38" name="cpu_utilization" type="decimal"/>
+        <element label="Asset Name" max_length="100" name="asset_name" type="string"/>
+        <element choice="3" default="development" label="Environment" max_length="40" name="environment" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Test" sequence="1" value="test"/>
+                <element inactive_on_update="false" label="Development" sequence="0" value="development"/>
+                <element inactive_on_update="false" label="Production" sequence="2" value="production"/>
+            </choice>
+        </element>
+        <element label="Assiged to" max_length="32" name="assiged_to" reference="sys_user" type="reference"/>
+        <element choice="3" default="on" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Off" sequence="1" value="off"/>
+                <element inactive_on_update="false" label="Hibernated" sequence="2" value="hibernated"/>
+                <element inactive_on_update="false" label="On" sequence="0" value="on"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="assiged_to"/>
+        </index>
+    </element>
+</database>

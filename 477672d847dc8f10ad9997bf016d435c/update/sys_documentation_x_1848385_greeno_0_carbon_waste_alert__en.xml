@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Carbon Waste Alert" language="en" table="x_1848385_greeno_0_carbon_waste_alert">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Carbon Waste Alert</label>
+            <language>en</language>
+            <name>x_1848385_greeno_0_carbon_waste_alert</name>
+            <plural>Carbon Waste Alerts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-13 07:45:30</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Carbon Waste Alert</sys_name>
+            <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+            <sys_update_name>sys_documentation_x_1848385_greeno_0_carbon_waste_alert__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-13 07:45:30</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

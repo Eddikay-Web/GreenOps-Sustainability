@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4845000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automates the power-off of idle non-prod assets</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>greenops_hibernation_orchestrator</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"ed0f8b90-3dbb-4908-bdb5-e59f6b3fdbf2":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"ed0f8b90-3dbb-4908-bdb5-e59f6b3fdbf2.u_select_server","label":"1 - Get Catalog Variables➛u_select_server","reference":"x_1848385_greeno_0_greenops_asset","reference_display":"GreenOps Asset","type":"reference","base_type":"reference","column_name":"","usedInstances":{"773f3808-a748-4d24-99ae-6c52629a30b4":["conditions"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"773f3808-a748-4d24-99ae-6c52629a30b4.Record","label":"2 - Look Up Record➛GreenOps Asset Record","reference":"x_1848385_greeno_0_greenops_asset","reference_display":"GreenOps Asset","type":"reference","base_type":"reference","usedInstances":{"af6a48ae-2492-433a-aa9f-120d67ab91e4":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>c826c3d84750cf10ad9997bf016d4376</master_snapshot>
+        <master_snapshot_digest/>
+        <name>GreenOps Hibernation Orchestrator</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>d426c3d84750cf10ad9997bf016d43e9</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:02:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>664ffa1c4710cf10ad9997bf016d43f4</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name>GreenOps Hibernation Orchestrator</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name>sys_hub_flow_664ffa1c4710cf10ad9997bf016d43f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 11:23:09</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>8e4de71047d4cf10ad9997bf016d4302</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=664ffa1c4710cf10ad9997bf016d43f4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=664ffa1c4710cf10ad9997bf016d43f4"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <published_version/>
+        <run_flow_in/>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d426c3d84750cf10ad9997bf016d43e9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 09:17:26</sys_updated_on>
+        <trigger_definition/>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=664ffa1c4710cf10ad9997bf016d43f4"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=664ffa1c4710cf10ad9997bf016d43f4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=664ffa1c4710cf10ad9997bf016d43f4^sys_idNOT INaa4ffa1c4710cf10ad9997bf016d43f8"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>664ffa1c4710cf10ad9997bf016d43f4</id>
+        <name>GreenOps Hibernation Orchestrator</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:02:14</sys_created_on>
+        <sys_id>aa4ffa1c4710cf10ad9997bf016d43f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:02:14</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=aa4ffa1c4710cf10ad9997bf016d43f8"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=664ffa1c4710cf10ad9997bf016d43f4^sys_idNOT IN0b7ff65c4710cf10ad9997bf016d43fd,0f7ff65c4710cf10ad9997bf016d43b6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="GreenOps Hibernation Orchestrator">664ffa1c4710cf10ad9997bf016d43f4</model>
+        <model_id>664ffa1c4710cf10ad9997bf016d43f4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_664ffa1c4710cf10ad9997bf016d43f4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:03:05</sys_created_on>
+        <sys_id>0b7ff65c4710cf10ad9997bf016d43fd</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 09:22:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0b7ff65c4710cf10ad9997bf016d43fd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="GreenOps Hibernation Orchestrator">664ffa1c4710cf10ad9997bf016d43f4</model>
+        <model_id>664ffa1c4710cf10ad9997bf016d43f4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_664ffa1c4710cf10ad9997bf016d43f4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:03:04</sys_created_on>
+        <sys_id>0f7ff65c4710cf10ad9997bf016d43b6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 09:17:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0f7ff65c4710cf10ad9997bf016d43b6"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=664ffa1c4710cf10ad9997bf016d43f4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=664ffa1c4710cf10ad9997bf016d43f4"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=664ffa1c4710cf10ad9997bf016d43f4^sys_idNOT IN7e7ff65c4710cf10ad9997bf016d4391"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="GreenOps Hibernation Orchestrator">664ffa1c4710cf10ad9997bf016d43f4</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:03:04</sys_created_on>
+        <sys_id>7e7ff65c4710cf10ad9997bf016d4391</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:32:05</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TTW/bMAz9K4FOG5CDk6zNktswoECAbgWarpdiMGSJcoTJkifJbr2g/32kPxK3M4YB3U2iyMfHx6eHIzM8A8O27LaysyvjHmc7y+ZM2wjecnPXlICP4uC0AIx3h2sdIts+HJm656aihIyLH7l3lZWYpK5HmIowtZ2dM2bvJChemfiecncFzwmBznswICJItlXcBMDItzC+fdEhaJv3gef5iIByHv5O4GXGG9p+n7OCW8mj8805ybviDorS8AinoPMSPNsukmTOaiK6b8JOdl0tL6i/r2xKDFNNstf9NHiUOiBYc3+OiIM20oNF5ZFCyT0iRMI/vnrS1OIy2SRivdys18tktUoSdZEpoYRYf1wkl4uLDQJOr36SWHzlg/Fk8BTBypFgf6rjgcsba86BAxqsm6rgT0H/QvAPCeUpwDFEP/HpmvZqDEIQi9A60Py71eopr/aDJGSmKawXrqmnzDZIQb7ou33+/wQXbya4JIKddDdl1A7Nwla0Wp4ZqglN6BbuQWBJGr3OcyzEImeqwn6d8kXPfuTSKuC2oCRH0IqH77E/uMfbYZ1X2raU+kfjBDenG4/YOasi6XdkXNYcK8jR0WOP59YV6c+KKtp/MvRK24koIQivy/hJRF3D6dP+BvLQA67rBAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=664ffa1c4710cf10ad9997bf016d43f4^sys_idNOT IN18afb6544710cf10ad9997bf016d4368,1a8383144750cf10ad9997bf016d43a5,27c50b984750cf10ad9997bf016d4360,8d1543584750cf10ad9997bf016d4308"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>330ba3abc31013002841b63b12d3aee8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Hibernation Orchestrator">664ffa1c4710cf10ad9997bf016d43f4</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:03:42</sys_created_on>
+        <sys_id>18afb6544710cf10ad9997bf016d4368</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-15 14:34:29</sys_updated_on>
+        <ui_id>ed0f8b90-3dbb-4908-bdb5-e59f6b3fdbf2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91VXW/bMAz8K4aejcAfXdPkbWtRbMC2As3Ql6IQZJtOhMmyK8lJsyD/fZQtO27apemwDtgeTVHiHck7324Iz8iUJHmQsJglaRwGYRwE0dlJmJzGSRhlMQNgxCeSFYCZCu5r0AYyyg0UGF8yUduDzWYGaslT8M6ZYaKc03DkkpvU7RaTM64rwdY37g5G0gUXmQJJprd3PqmYwjIGFJlu9o6OxSlYAgJTZ3VScINAvesWxQEOZl218RywXgou9Nk9dT2Ilyqz6AKfwIMBmQHCypnQ4JOCyYyZUq3J1KgaAwpYdiXFus9YcGla2gV70PwHFo0jf1B3SnRKEV4HrD+hrnMNGofe+9Qm5RfY8BmWTE2t+raWOArdti6DnNXCnA9jbcJVZXgp2yuGJaK7XYq6kF/bbpH+gcHYao2QoLINsJQcv3y2KFd9ty65bHrlDkWZMjFIBabSxSUHYQcr6yLBXJ8wYxRPamNxbggIKLAALVhVcTmnlSqXvHkUMRajucCPUS7KFYLRfC5HLLWERjgHNrrE+EUTvmGKW3Zf8JmmSolToZkqq8qRtgMjW5/otT4XTOsddxwBva8t8rYTjjNt22avpIpX5j0WXoKjt/U7XSWH9jUPdzuJo8T5GqCpU8+evKIYgiAJg5PxuyDNw4Blk8lkjHoIT7OTeBI8FZfbE8/KEpT3kWODJWvm/WrZvUyjk903x6NzgWZJtYfS8LopICKjX2b+elGGbyZKQ3ExHgHUFB+mS0eJ6pbSc3p9uRH/hYBtrb8lX67RJIsSd6bhTIezapSMqkQiOBULcRdcYD2qaml4AbRRFuWSlpVecli9nQuMD8tnvNNCt2HdXumBA0yiJDxDpT/vAFE8tWuJZGwHqUQ+TxzhN154nU8cQbTziU4VNwOmB5rgzECLWi+SOv0OZs8OZvbE+9AdOUeIDjuCixxjCWEUBMFjV/iF3v9VQT+WLkosR1fG3u3mgDsBTSdJcwWLvpXAjxIqLp1MRY2ZBbaCK6zSQ7XG2qfZ1gxAgKIr1VbqUyqFd/A/iZYhIDUNyc5Jylqlzmkwuq+RP2cXdz8BpKi2UI4LAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=18afb6544710cf10ad9997bf016d4368"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Hibernation Orchestrator">664ffa1c4710cf10ad9997bf016d43f4</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:20:46</sys_created_on>
+        <sys_id>1a8383144750cf10ad9997bf016d43a5</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-15 14:34:29</sys_updated_on>
+        <ui_id>773f3808-a748-4d24-99ae-6c52629a30b4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8A5cQfoS+rVr1tNLeVtr29mVvZdmxU6wzTtZ2aCnif99x7AACCkRHpVb31Ho8tr+Z+b6xw49lyGl4FdJJNMknk2E6jqIkiaLRKMlwTEgyykhE8CDshBLPGHgaTASD4RyLyo6fUZwO0iQdokfFmCxQ5P8pNcJaMwO+lOtS4MV3v+RPO39X6uCTn8+mXFDFZHj142cnLLGCowxT4dVyZ+pcrAITJsD1wYPdwW4W5XqI6jln+7K9LPjqJgpFLZSoE7JnwyRlgCHHQrNOOMOSYlOoxdqiGKZ3UmwMUy4N7Bha52fNX+DcNLJ+OYOoMubm1kPkU+XM+Q02+N6oKjOV8q7ZtOAZ0y4flOW4EuZ62+Yc7krDC+mWuLDd6kJUM/nVpSNcb9BUBiyVBhCstIFa5D6M/H5aPH1rUN5yWefET4oiw2I9wsYoTipj8SxDJtgMNkIzXJZcPqJSFXNeLwYss96jgEEvF8UTHKr5o+zhzALvQV5x7xbsN7X5O1bcRvEXbAOLARAXwBDkSqiLStWpnKNMVLqeUFhqt1e46oR6oa8F0HETOaQc/aosbpcHHzFySbNLMsVL8wm2mDMf3KrTyGV4lIKTDeWyQlJuUegtzQAaxOk/FSymyyWjUZ6SSdRNKCHdwSRKu4SSYZcNJ/mIJDkleb9XIQ2pzAz8UXOmVqt9WV1o15ZiPJ2JRozX26k4lB4vyz3bl0MbeFnGF5PlIIo+kjDh8Peny/ZKcyk4IbeYHiUZ3fBJF8ogl8stve1rpTXPz4DQ8PzOMjMgi9dQeZrnnAl66Pa5tRM7t0///3n7vEuSAyCKXPW4FFzWTwkA+lbsHx6lHol3eFbTa+uusTass30N4MAUwUtrJZwBp1HCPZwdPDg8ByA2/b6mzG6vb4xeAMnFBJD0LyOA5TrMdSIP5Lx5PdpqNv4v1h/v+gMFtxbEq0MCa3Vm3PbM/mpfwEkrBW+Tzc3cvMK5Cz8zX1Fk5y1bwBSW+vOQ0y964vSRmc3pjRctzBMW/x6a94xDTaHq8N7gyRof/WoiW09WnqMZVI6X8LJWLANywJecYigvKkmRf1NviGQrmXOljXfebzTfGOhHBgUIMzBTFtTewdq75UV8Oo4mlZ/zoAnEn6YDCCSoAwnWgbQLu03TGlzwcXrppnWLuairAZ9L5VY5mVKFeqVxnSjkEUac2dXOBBVfFNR/b3uHJHCw/Z3A+iG+vS/fmjKGyaCPR+MkjqMojug4SsfjOB2RfITHg3yjUYS0zKCbws45UAW2Rw01mjpH+/3HtdS2jeYMVA0FbwppP7v7YxNYWFDfoIF1GrhvKKQoBMNyp6M8wD3xx63H7/k6fHdd5UP8ElXxh91MO9PBXL/Vu6Hif0v+q2KfLcVSFvXTmGbddByPu4OcjroTioddPCHDcUJZNsgv+RT4+RuJWVaN7hUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1a8383144750cf10ad9997bf016d43a5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Hibernation Orchestrator">664ffa1c4710cf10ad9997bf016d43f4</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:30:42</sys_created_on>
+        <sys_id>27c50b984750cf10ad9997bf016d4360</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-15 14:34:29</sys_updated_on>
+        <ui_id>7053cfd6-8549-401c-a7c5-ba85dc6d9a1e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUXY7aMBC+SuRnQASWbpe3FXSlSvsjFWn7sFqhiTMBS46d2g4sRdygd+gZerMeoePEQMqiCiTeKuVlvnz2zDf+Zl7WTKRsyAYJjxPOPwz6cbfbpy/J4vQm7t4gH3y8Tq9ZiynIkZhSz6YSFygJWoAsPSZUpilMhS0krJ4D+rlG+VzI1KBiw5fXFivA0D0ODRuuD36dWoiEhLIP2X2o4khhblV4iM+14Bji+3BstAW1SX0Z3RbDN4cqRcqfgbTYYjmoFJw2qx1iENInJffAXChHtzFPfrPiO+W76npehqSIY/1vF05Dc2o4G4ODiTMld6UJ1LpYS71Y7yS229GjVhi1241uN0rftPbc0O6DNwnMuMn8CkYJNWuQl4Tsyb0m+ZMx2jSoGOLA7W/o5VLMoJRudL6C+GQFvXMU9M9QcOUV1M1/KpzQ5EYWe89AIrdPo2WZq8faZ2yn9/nA/jU6PjoFpSULYOFt5n0TTJRN5nr5ZeuRO6GqisJPqTnIXQTOGZGUzvd3zVBiThdNcygKasS0MHohqsNUbN6ZSQo6mdRLSmrFTHWAe2kdcjV07ggfV/AzGOFlPtA1dHjTYnZlRxKs3YslC0+/lb6SWnrQMK0aVR3hRhTulhIsMJTr21+Nc6//r3HGwd/jm6O1MMPGW/3++eNXNCmtA6EgEVK4FYWcXGaH0W3pdA4O02guEjQKvMSI9BeSNkyUaROREnSd97vpYveet91OaMfWtQ+7XhxtUNhwlkxRzUFzw0224HbILrbheoPBZVbcsaXxfgzPmsL/b8he/wAkKMpLvgcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=27c50b984750cf10ad9997bf016d4360"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Hibernation Orchestrator">664ffa1c4710cf10ad9997bf016d43f4</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:27:32</sys_created_on>
+        <sys_id>8d1543584750cf10ad9997bf016d4308</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-15 14:34:29</sys_updated_on>
+        <ui_id>af6a48ae-2492-433a-aa9f-120d67ab91e4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5XPbZWvlrQ3RNXVSixIsOICKJrEk9aS42RtB+hW/e87SZxSAcuCxKXanOr58nsv85rbLROczVmE3PNn/jQL/TAMPC+IIz+dhqkf8BAQfTZkCgqkSo1ZqTmdH0DWTWC7PTkJ8zD24hGcRPEo4kE0ms0AR9NsEkyDGYReGo2v2r7djjq5MJWEzY0bQJFsLSTXqNj89n7IKtB0l0XN5tsXqY+ClZCipNKrHu1L9HZTNWdeZnWByiaiD567zoXLDL4vKENNDRzfGzJ8sqg4EpAcpMEhK0BxsKXesLnVNQU0Ar9UcrOvWAtlO6IFPBnxm26OvKYuR2KWORH2x8QJ1IXzBVi4psmZrfVer1JkaDpNOOZQS3t2GOsKLisrStW1WEhl313KulAXnSJsP+DgfdSGQGDV8GyQd7Ty63X5eNWDXArVSuIoyjIDuT+BtVqktW3gbBlKbDUuoKqEWiWVLh9E20xQivFK0mGcy/KR7jRipcaQNbjHpCqMlxRftOEb0KIh8YPGUPNuyMzGnEkw5pkKaZj8qhskHTFHIWlVaCVI2k1omjMtKntKVz2gA74bOjukk/c2LJs9L9TBzGdLPCV+HMVhPElWGlGVied+VCYhuGhfm+Bbk7+szODU5T9niQ8A7i3xs12Etwk4V7yKnR/2Di66hPPE5Ms8ER+TJxyNozfFv6zgBe/+2R5sUrv95sAGxoKtzV3teSFfixS1Aov89e7/te5zHvgA0t4DS4GSmzeg9wbAggBaTDoqL0zgkoMbl9x/HL7MCf7Ua58j8sN/8424/wMRZEBZNAkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8d1543584750cf10ad9997bf016d4308"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=664ffa1c4710cf10ad9997bf016d43f4"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=664ffa1c4710cf10ad9997bf016d43f4"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=664ffa1c4710cf10ad9997bf016d43f4"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=664ffa1c4710cf10ad9997bf016d43f4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_664ffa1c4710cf10ad9997bf016d43f4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:03:05</sys_created_on>
+        <sys_id>0f7ff65c4710cf10ad9997bf016d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:03:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_664ffa1c4710cf10ad9997bf016d43f4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:03:05</sys_created_on>
+        <sys_id>cf7f3a5c4710cf10ad9997bf016d430a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:03:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_664ffa1c4710cf10ad9997bf016d43f4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_664ffa1c4710cf10ad9997bf016d43f4"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automates the power-off of idle non-prod assets</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>greenops_hibernation_orchestrator</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"ed0f8b90-3dbb-4908-bdb5-e59f6b3fdbf2":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"ed0f8b90-3dbb-4908-bdb5-e59f6b3fdbf2.u_select_server","label":"1 - Get Catalog Variables➛u_select_server","reference":"x_1848385_greeno_0_greenops_asset","reference_display":"GreenOps Asset","type":"reference","base_type":"reference","column_name":"","usedInstances":{"773f3808-a748-4d24-99ae-6c52629a30b4":["conditions"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"773f3808-a748-4d24-99ae-6c52629a30b4.Record","label":"2 - Look Up Record➛GreenOps Asset Record","reference":"x_1848385_greeno_0_greenops_asset","reference_display":"GreenOps Asset","type":"reference","base_type":"reference","usedInstances":{"af6a48ae-2492-433a-aa9f-120d67ab91e4":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>GreenOps Hibernation Orchestrator</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="GreenOps Hibernation Orchestrator">664ffa1c4710cf10ad9997bf016d43f4</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c826c3d84750cf10ad9997bf016d4376</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 09:23:00</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=c826c3d84750cf10ad9997bf016d4376"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c826c3d84750cf10ad9997bf016d4376"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c826c3d84750cf10ad9997bf016d4376"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c826c3d84750cf10ad9997bf016d4376^sys_idNOT IN0826c3d84750cf10ad9997bf016d4378"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c826c3d84750cf10ad9997bf016d4376</id>
+        <name>GreenOps Hibernation Orchestrator</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:06</sys_created_on>
+        <sys_id>0826c3d84750cf10ad9997bf016d4378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:32:06</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0826c3d84750cf10ad9997bf016d4378"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c826c3d84750cf10ad9997bf016d4376^sys_idNOT IN5c26c3d84750cf10ad9997bf016d4394,8426c3d84750cf10ad9997bf016d437a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="GreenOps Hibernation Orchestrator">c826c3d84750cf10ad9997bf016d4376</model>
+        <model_id>c826c3d84750cf10ad9997bf016d4376</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c826c3d84750cf10ad9997bf016d4376</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:06</sys_created_on>
+        <sys_id>5c26c3d84750cf10ad9997bf016d4394</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 09:23:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5c26c3d84750cf10ad9997bf016d4394"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="GreenOps Hibernation Orchestrator">c826c3d84750cf10ad9997bf016d4376</model>
+        <model_id>c826c3d84750cf10ad9997bf016d4376</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c826c3d84750cf10ad9997bf016d4376</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:06</sys_created_on>
+        <sys_id>8426c3d84750cf10ad9997bf016d437a</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 09:23:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8426c3d84750cf10ad9997bf016d437a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c826c3d84750cf10ad9997bf016d4376"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c826c3d84750cf10ad9997bf016d4376"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=c826c3d84750cf10ad9997bf016d4376^sys_idNOT INd826c3d84750cf10ad9997bf016d43bb"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="GreenOps Hibernation Orchestrator">c826c3d84750cf10ad9997bf016d4376</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:06</sys_created_on>
+        <sys_id>d826c3d84750cf10ad9997bf016d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:32:06</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TTW/bMAz9K4FOG5CDk6zNktswoECAbgWarpdiMGSJcoTJkifJbr2g/32kPxK3M4YB3U2iyMfHx6eHIzM8A8O27LaysyvjHmc7y+ZM2wjecnPXlICP4uC0AIx3h2sdIts+HJm656aihIyLH7l3lZWYpK5HmIowtZ2dM2bvJChemfiecncFzwmBznswICJItlXcBMDItzC+fdEhaJv3gef5iIByHv5O4GXGG9p+n7OCW8mj8805ybviDorS8AinoPMSPNsukmTOaiK6b8JOdl0tL6i/r2xKDFNNstf9NHiUOiBYc3+OiIM20oNF5ZFCyT0iRMI/vnrS1OIy2SRivdys18tktUoSdZEpoYRYf1wkl4uLDQJOr36SWHzlg/Fk8BTBypFgf6rjgcsba86BAxqsm6rgT0H/QvAPCeUpwDFEP/HpmvZqDEIQi9A60Py71eopr/aDJGSmKawXrqmnzDZIQb7ou33+/wQXbya4JIKddDdl1A7Nwla0Wp4ZqglN6BbuQWBJGr3OcyzEImeqwn6d8kXPfuTSKuC2oCRH0IqH77E/uMfbYZ1X2raU+kfjBDenG4/YOasi6XdkXNYcK8jR0WOP59YV6c+KKtp/MvRK24koIQivy/hJRF3D6dP+BvLQA67rBAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=c826c3d84750cf10ad9997bf016d4376^sys_idNOT IN9426c3d84750cf10ad9997bf016d43b4,9426c3d84750cf10ad9997bf016d43b6,9c26c3d84750cf10ad9997bf016d43b9,d026c3d84750cf10ad9997bf016d43b8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>330ba3abc31013002841b63b12d3aee8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Hibernation Orchestrator">c826c3d84750cf10ad9997bf016d4376</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:06</sys_created_on>
+        <sys_id>9426c3d84750cf10ad9997bf016d43b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:32:06</sys_updated_on>
+        <ui_id>ed0f8b90-3dbb-4908-bdb5-e59f6b3fdbf2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91VXW/bMAz8K4aejcAfXdPkbWtRbMC2As3Ql6IQZJtOhMmyK8lJsyD/fZQtO27apemwDtgeTVHiHck7324Iz8iUJHmQsJglaRwGYRwE0dlJmJzGSRhlMQNgxCeSFYCZCu5r0AYyyg0UGF8yUduDzWYGaslT8M6ZYaKc03DkkpvU7RaTM64rwdY37g5G0gUXmQJJprd3PqmYwjIGFJlu9o6OxSlYAgJTZ3VScINAvesWxQEOZl218RywXgou9Nk9dT2Ilyqz6AKfwIMBmQHCypnQ4JOCyYyZUq3J1KgaAwpYdiXFus9YcGla2gV70PwHFo0jf1B3SnRKEV4HrD+hrnMNGofe+9Qm5RfY8BmWTE2t+raWOArdti6DnNXCnA9jbcJVZXgp2yuGJaK7XYq6kF/bbpH+gcHYao2QoLINsJQcv3y2KFd9ty65bHrlDkWZMjFIBabSxSUHYQcr6yLBXJ8wYxRPamNxbggIKLAALVhVcTmnlSqXvHkUMRajucCPUS7KFYLRfC5HLLWERjgHNrrE+EUTvmGKW3Zf8JmmSolToZkqq8qRtgMjW5/otT4XTOsddxwBva8t8rYTjjNt22avpIpX5j0WXoKjt/U7XSWH9jUPdzuJo8T5GqCpU8+evKIYgiAJg5PxuyDNw4Blk8lkjHoIT7OTeBI8FZfbE8/KEpT3kWODJWvm/WrZvUyjk903x6NzgWZJtYfS8LopICKjX2b+elGGbyZKQ3ExHgHUFB+mS0eJ6pbSc3p9uRH/hYBtrb8lX67RJIsSd6bhTIezapSMqkQiOBULcRdcYD2qaml4AbRRFuWSlpVecli9nQuMD8tnvNNCt2HdXumBA0yiJDxDpT/vAFE8tWuJZGwHqUQ+TxzhN154nU8cQbTziU4VNwOmB5rgzECLWi+SOv0OZs8OZvbE+9AdOUeIDjuCixxjCWEUBMFjV/iF3v9VQT+WLkosR1fG3u3mgDsBTSdJcwWLvpXAjxIqLp1MRY2ZBbaCK6zSQ7XG2qfZ1gxAgKIr1VbqUyqFd/A/iZYhIDUNyc5Jylqlzmkwuq+RP2cXdz8BpKi2UI4LAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9426c3d84750cf10ad9997bf016d43b4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Hibernation Orchestrator">c826c3d84750cf10ad9997bf016d4376</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:06</sys_created_on>
+        <sys_id>9426c3d84750cf10ad9997bf016d43b6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:32:06</sys_updated_on>
+        <ui_id>773f3808-a748-4d24-99ae-6c52629a30b4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8A5cQfoS+rVr1tNLeVtr29mVvZdmxU6wzTtZ2aCnif99x7AACCkRHpVb31Ho8tr+Z+b6xw49lyGl4FdJJNMknk2E6jqIkiaLRKMlwTEgyykhE8CDshBLPGHgaTASD4RyLyo6fUZwO0iQdokfFmCxQ5P8pNcJaMwO+lOtS4MV3v+RPO39X6uCTn8+mXFDFZHj142cnLLGCowxT4dVyZ+pcrAITJsD1wYPdwW4W5XqI6jln+7K9LPjqJgpFLZSoE7JnwyRlgCHHQrNOOMOSYlOoxdqiGKZ3UmwMUy4N7Bha52fNX+DcNLJ+OYOoMubm1kPkU+XM+Q02+N6oKjOV8q7ZtOAZ0y4flOW4EuZ62+Yc7krDC+mWuLDd6kJUM/nVpSNcb9BUBiyVBhCstIFa5D6M/H5aPH1rUN5yWefET4oiw2I9wsYoTipj8SxDJtgMNkIzXJZcPqJSFXNeLwYss96jgEEvF8UTHKr5o+zhzALvQV5x7xbsN7X5O1bcRvEXbAOLARAXwBDkSqiLStWpnKNMVLqeUFhqt1e46oR6oa8F0HETOaQc/aosbpcHHzFySbNLMsVL8wm2mDMf3KrTyGV4lIKTDeWyQlJuUegtzQAaxOk/FSymyyWjUZ6SSdRNKCHdwSRKu4SSYZcNJ/mIJDkleb9XIQ2pzAz8UXOmVqt9WV1o15ZiPJ2JRozX26k4lB4vyz3bl0MbeFnGF5PlIIo+kjDh8Peny/ZKcyk4IbeYHiUZ3fBJF8ogl8stve1rpTXPz4DQ8PzOMjMgi9dQeZrnnAl66Pa5tRM7t0///3n7vEuSAyCKXPW4FFzWTwkA+lbsHx6lHol3eFbTa+uusTass30N4MAUwUtrJZwBp1HCPZwdPDg8ByA2/b6mzG6vb4xeAMnFBJD0LyOA5TrMdSIP5Lx5PdpqNv4v1h/v+gMFtxbEq0MCa3Vm3PbM/mpfwEkrBW+Tzc3cvMK5Cz8zX1Fk5y1bwBSW+vOQ0y964vSRmc3pjRctzBMW/x6a94xDTaHq8N7gyRof/WoiW09WnqMZVI6X8LJWLANywJecYigvKkmRf1NviGQrmXOljXfebzTfGOhHBgUIMzBTFtTewdq75UV8Oo4mlZ/zoAnEn6YDCCSoAwnWgbQLu03TGlzwcXrppnWLuairAZ9L5VY5mVKFeqVxnSjkEUac2dXOBBVfFNR/b3uHJHCw/Z3A+iG+vS/fmjKGyaCPR+MkjqMojug4SsfjOB2RfITHg3yjUYS0zKCbws45UAW2Rw01mjpH+/3HtdS2jeYMVA0FbwppP7v7YxNYWFDfoIF1GrhvKKQoBMNyp6M8wD3xx63H7/k6fHdd5UP8ElXxh91MO9PBXL/Vu6Hif0v+q2KfLcVSFvXTmGbddByPu4OcjroTioddPCHDcUJZNsgv+RT4+RuJWVaN7hUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9426c3d84750cf10ad9997bf016d43b6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Hibernation Orchestrator">c826c3d84750cf10ad9997bf016d4376</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:06</sys_created_on>
+        <sys_id>9c26c3d84750cf10ad9997bf016d43b9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:32:06</sys_updated_on>
+        <ui_id>7053cfd6-8549-401c-a7c5-ba85dc6d9a1e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUXY7aMBC+SuRnQASWbpe3FXSlSvsjFWn7sFqhiTMBS46d2g4sRdygd+gZerMeoePEQMqiCiTeKuVlvnz2zDf+Zl7WTKRsyAYJjxPOPwz6cbfbpy/J4vQm7t4gH3y8Tq9ZiynIkZhSz6YSFygJWoAsPSZUpilMhS0krJ4D+rlG+VzI1KBiw5fXFivA0D0ODRuuD36dWoiEhLIP2X2o4khhblV4iM+14Bji+3BstAW1SX0Z3RbDN4cqRcqfgbTYYjmoFJw2qx1iENInJffAXChHtzFPfrPiO+W76npehqSIY/1vF05Dc2o4G4ODiTMld6UJ1LpYS71Y7yS229GjVhi1241uN0rftPbc0O6DNwnMuMn8CkYJNWuQl4Tsyb0m+ZMx2jSoGOLA7W/o5VLMoJRudL6C+GQFvXMU9M9QcOUV1M1/KpzQ5EYWe89AIrdPo2WZq8faZ2yn9/nA/jU6PjoFpSULYOFt5n0TTJRN5nr5ZeuRO6GqisJPqTnIXQTOGZGUzvd3zVBiThdNcygKasS0MHohqsNUbN6ZSQo6mdRLSmrFTHWAe2kdcjV07ggfV/AzGOFlPtA1dHjTYnZlRxKs3YslC0+/lb6SWnrQMK0aVR3hRhTulhIsMJTr21+Nc6//r3HGwd/jm6O1MMPGW/3++eNXNCmtA6EgEVK4FYWcXGaH0W3pdA4O02guEjQKvMSI9BeSNkyUaROREnSd97vpYveet91OaMfWtQ+7XhxtUNhwlkxRzUFzw0224HbILrbheoPBZVbcsaXxfgzPmsL/b8he/wAkKMpLvgcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9c26c3d84750cf10ad9997bf016d43b9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GreenOps Hibernation Orchestrator">c826c3d84750cf10ad9997bf016d4376</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:06</sys_created_on>
+        <sys_id>d026c3d84750cf10ad9997bf016d43b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:32:06</sys_updated_on>
+        <ui_id>af6a48ae-2492-433a-aa9f-120d67ab91e4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5XPbZWvlrQ3RNXVSixIsOICKJrEk9aS42RtB+hW/e87SZxSAcuCxKXanOr58nsv85rbLROczVmE3PNn/jQL/TAMPC+IIz+dhqkf8BAQfTZkCgqkSo1ZqTmdH0DWTWC7PTkJ8zD24hGcRPEo4kE0ms0AR9NsEkyDGYReGo2v2r7djjq5MJWEzY0bQJFsLSTXqNj89n7IKtB0l0XN5tsXqY+ClZCipNKrHu1L9HZTNWdeZnWByiaiD567zoXLDL4vKENNDRzfGzJ8sqg4EpAcpMEhK0BxsKXesLnVNQU0Ar9UcrOvWAtlO6IFPBnxm26OvKYuR2KWORH2x8QJ1IXzBVi4psmZrfVer1JkaDpNOOZQS3t2GOsKLisrStW1WEhl313KulAXnSJsP+DgfdSGQGDV8GyQd7Ty63X5eNWDXArVSuIoyjIDuT+BtVqktW3gbBlKbDUuoKqEWiWVLh9E20xQivFK0mGcy/KR7jRipcaQNbjHpCqMlxRftOEb0KIh8YPGUPNuyMzGnEkw5pkKaZj8qhskHTFHIWlVaCVI2k1omjMtKntKVz2gA74bOjukk/c2LJs9L9TBzGdLPCV+HMVhPElWGlGVied+VCYhuGhfm+Bbk7+szODU5T9niQ8A7i3xs12Etwk4V7yKnR/2Di66hPPE5Ms8ER+TJxyNozfFv6zgBe/+2R5sUrv95sAGxoKtzV3teSFfixS1Aov89e7/te5zHvgA0t4DS4GSmzeg9wbAggBaTDoqL0zgkoMbl9x/HL7MCf7Ua58j8sN/8424/wMRZEBZNAkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d026c3d84750cf10ad9997bf016d43b8"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c826c3d84750cf10ad9997bf016d4376"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c826c3d84750cf10ad9997bf016d4376"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c826c3d84750cf10ad9997bf016d4376"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c826c3d84750cf10ad9997bf016d4376"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c826c3d84750cf10ad9997bf016d4376</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:06</sys_created_on>
+        <sys_id>5026c3d84750cf10ad9997bf016d4391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:32:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c826c3d84750cf10ad9997bf016d4376</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:06</sys_created_on>
+        <sys_id>9826c3d84750cf10ad9997bf016d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GreenOps Sustainability" source="x_1848385_greeno_0">477672d847dc8f10ad9997bf016d435c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenOps Sustainability">477672d847dc8f10ad9997bf016d435c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:32:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c826c3d84750cf10ad9997bf016d4376"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c826c3d84750cf10ad9997bf016d4376"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>664ffa1c4710cf10ad9997bf016d43f4</sys_id>
+        <latest_snapshot>c826c3d84750cf10ad9997bf016d4376</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch6-01-16-2026_02-02-2026_1554.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=664ffa1c4710cf10ad9997bf016d43f4^sys_idNOT IN5826c3d84750cf10ad9997bf016d43ea"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"5826c3d84750cf10ad9997bf016d43ea","name":"plan","plan_signature":null}}</plan>
+        <plan_id>664ffa1c4710cf10ad9997bf016d43f4</plan_id>
+        <snapshot>404cae8547140310ad9997bf016d431e</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 08:32:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5826c3d84750cf10ad9997bf016d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 08:32:07</sys_updated_on>
+        <trigger display_value="">d426c3d84750cf10ad9997bf016d43e9</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=664ffa1c4710cf10ad9997bf016d43f4"/>
+</record_update>
