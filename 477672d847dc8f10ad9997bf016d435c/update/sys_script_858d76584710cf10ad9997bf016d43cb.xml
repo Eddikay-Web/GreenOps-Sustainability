@@ -29,13 +29,15 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	// 1. Calculate waste percentage
-	var wastePercentage = 100 - parseFloat(current.cpu_utilization);
+	// 1. Waste percentage (guard against an empty or non-numeric CPU value)
+	var cpu = parseFloat(current.getValue('cpu_utilization'));
+	if (isNaN(cpu))
+		return;
+	var wastePercentage = Math.max(0, Math.min(100, 100 - cpu));
 
-	// 2. Set CO2 Waste - Using 'setValue' ensures it hits the database correctly
+	// 2. Estimated values. The 0.15 (kg CO2e) and 0.10 (GBP) factors per waste-% are
+	//    placeholder coefficients: replace with measured or sourced figures before quoting.
 	current.setValue('co2_waste_kg', wastePercentage * 0.15);
-
-	// 3. Set Savings
 	current.setValue('potential_savings', wastePercentage * 0.10);
 
 })(current, previous);]]></script>

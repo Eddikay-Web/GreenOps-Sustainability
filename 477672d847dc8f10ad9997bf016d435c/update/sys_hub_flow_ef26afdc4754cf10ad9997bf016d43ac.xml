@@ -10,7 +10,7 @@
         <category/>
         <copied_from>99d02f144754cf10ad9997bf016d4312</copied_from>
         <copied_from_name>GreenOps Nightly Shutdown</copied_from_name>
-        <description>Automatically hibernates all Development servers at 6:00 PM daily to save CO2.</description>
+        <description>Scheduled daily at 08:00. Counterpart to Nightly Shutdown for servers hibernated overnight (verify the action steps in Flow Designer).</description>
         <display_name_after_preview/>
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
@@ -252,7 +252,7 @@
         <category/>
         <copied_from>99d02f144754cf10ad9997bf016d4312</copied_from>
         <copied_from_name/>
-        <description>Automatically hibernates all Development servers at 6:00 PM daily to save CO2.</description>
+        <description>Scheduled daily at 08:00. Counterpart to Nightly Shutdown for servers hibernated overnight (verify the action steps in Flow Designer).</description>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>greenops_morning_poweron</internal_name>
         <label_cache>[{"name":"e3b42b11-aa68-4511-a766-f9a067ed798b.item","label":"2 - For Each➛GreenOps Asset Record","reference":"x_1848385_greeno_0_greenops_asset","reference_display":"GreenOps Asset","type":"reference","base_type":"reference","usedInstances":{"4f3f480b-4d04-4317-b5a4-483aaac8e3a7":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"84cbe889-5c5f-4bc7-97ed-bd4ece1eba5a.Records","label":"1 - Look Up Records➛GreenOps Asset Records","reference":"x_1848385_greeno_0_greenops_asset","reference_display":"GreenOps Asset","type":"records","base_type":"records","usedInstances":{"e3b42b11-aa68-4511-a766-f9a067ed798b":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>

@@ -32,7 +32,19 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	// Add your code here
+	// Never let a production asset be switched off or hibernated by a flow or user.
+	if (current.getValue('environment') != 'production')
+		return;
+
+	if (!current.status.changes())
+		return;
+
+	var target = current.getValue('status');
+	if (target == 'off' || target == 'hibernated') {
+		gs.addErrorMessage('Blocked: ' + current.getValue('asset_name') +
+			' is a production asset and cannot be set to ' + target + '.');
+		current.setAbortAction(true);
+	}
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
